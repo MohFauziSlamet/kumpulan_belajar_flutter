@@ -49,6 +49,8 @@ dependencies:
   lottie: ^1.2.2
   carousel_slider: ^4.0.0
   convex_bottom_bar: ^3.0.0
+  google_fonts: ^3.0.1
+  flutter_pw_validator: ^1.4.2 # untuk password validation
 
 dev_dependencies:
   flutter_test:

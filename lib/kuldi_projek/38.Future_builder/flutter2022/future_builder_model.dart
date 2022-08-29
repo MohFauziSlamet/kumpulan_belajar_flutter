@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
 
   // membuat function future
   Future getAllUsers() async {
-    Future.delayed(Duration(seconds: 2));
+    // Future.delayed(Duration(seconds: 2));
     try {
       var response = await http.get(
         Uri.parse('https://reqres.in/api/users'),

@@ -11,7 +11,7 @@ class UserProvider extends GetConnect {
       'https://flutter-3457f-default-rtdb.asia-southeast1.firebasedatabase.app/';
 
   // membuat methode post
-  // kita pasang beberapa parameter , untuk data yang ingin di
+  // kita pasang beberapa parameter , untuk data yang ingin di simpan.
   // methode ini untuk menyimpan user ke DB
   Future<Response> postData({
     required String name,
@@ -72,10 +72,10 @@ class UserProvider extends GetConnect {
     return User.fromJson(response.body);
   }
 
-  Future<Map<String, dynamic>> getAllUser() async {
-    final response = await get(url + 'users/.json');
+  Future<User?> getAllUser() async {
+    final response = await get(url + 'users.json');
     // print(response.body);
 
-    return response.body;
+    return User.fromJson(response.body);
   }
 }

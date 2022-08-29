@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../models/user.dart';
@@ -11,7 +13,7 @@ class UsersC extends GetxController {
     Get.snackbar(
       "ERROR",
       msg,
-      duration: Duration(seconds: 2),
+      duration: const Duration(seconds: 2),
     );
   }
 
@@ -131,9 +133,7 @@ class UsersC extends GetxController {
     return await userProvider.getSingleUser(id);
   }
 
-  Future<Map<String, dynamic>?> allUser() async {
-    final data = await userProvider.getAllUser();
-    // print(data);
-    // users.add(User(id: data.toString()));
+  Future<User?> allUser() async {
+    var data = userProvider.getAllUser();
   }
 }

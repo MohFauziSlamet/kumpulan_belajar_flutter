@@ -7,11 +7,13 @@ import '../controllers/usersC.dart';
 class AddPage extends StatelessWidget {
   final addC = Get.find<AddC>();
   final usersC = Get.find<UsersC>();
+
+  AddPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ADD USER"),
+        title: const Text("ADD USER"),
       ),
       body: SafeArea(
         child: Padding(
@@ -22,29 +24,29 @@ class AddPage extends StatelessWidget {
                 controller: addC.nameC,
                 textInputAction: TextInputAction.next,
                 autocorrect: false,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "Full Name",
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               TextField(
                 controller: addC.emailC,
                 keyboardType: TextInputType.emailAddress,
                 textInputAction: TextInputAction.next,
                 autocorrect: false,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "Email Address",
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               TextField(
                 controller: addC.phoneC,
                 keyboardType: TextInputType.phone,
                 textInputAction: TextInputAction.done,
                 autocorrect: false,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "Phone Number",
                   border: OutlineInputBorder(),
                 ),
@@ -54,14 +56,14 @@ class AddPage extends StatelessWidget {
                   addC.phoneC.text,
                 ),
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               ElevatedButton(
                 onPressed: () => usersC.add(
                   addC.nameC.text,
                   addC.emailC.text,
                   addC.phoneC.text,
                 ),
-                child: Text("ADD USER"),
+                child: const Text("ADD USER"),
               ),
             ],
           ),

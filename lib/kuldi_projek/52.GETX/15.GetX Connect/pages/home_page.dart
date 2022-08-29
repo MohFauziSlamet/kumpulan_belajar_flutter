@@ -5,15 +5,17 @@ import '../controllers/usersC.dart';
 
 class HomePage extends StatelessWidget {
   final usersC = Get.find<UsersC>();
+
+  HomePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ALL USERS"),
+        title: const Text("ALL USERS"),
         actions: [
           IconButton(
             onPressed: () => Get.toNamed(RouteName.add),
-            icon: Icon(Icons.add),
+            icon: const Icon(Icons.add),
           ),
         ],
       ),
@@ -22,7 +24,7 @@ class HomePage extends StatelessWidget {
           () => Padding(
             padding: const EdgeInsets.all(20),
             child: usersC.users.isEmpty
-                ? Center(
+                ? const Center(
                     child: Text(
                       "Belum ada data",
                       style: TextStyle(fontSize: 20),
@@ -31,7 +33,7 @@ class HomePage extends StatelessWidget {
                 : ListView.builder(
                     itemCount: usersC.users.length,
                     itemBuilder: (context, i) => ListTile(
-                      leading: CircleAvatar(),
+                      leading: const CircleAvatar(),
                       title: Text("${usersC.users[i].name}"),
                       subtitle: Text("${usersC.users[i].email}"),
                       trailing: IconButton(
@@ -56,7 +58,7 @@ class HomePage extends StatelessWidget {
         onPressed: () {
           usersC.allUser();
         },
-        child: Icon(Icons.get_app_rounded),
+        child: const Icon(Icons.get_app_rounded),
       ),
     );
   }

@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 /// height device. maka kontainer tersebut akan otomatis dipindahkan ke bawah ,
 /// mirip seperti urutan zigzag.
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
@@ -37,61 +37,61 @@ class HomePage extends StatelessWidget {
         direction: Axis.vertical,
         children: [
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
             color: Colors.amber,
           ),
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
             color: Colors.amber,
           ),
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
             color: Colors.amber,
           ),
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
             color: Colors.amber,
           ),
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
             color: Colors.amber,
           ),
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
             color: Colors.amber,
           ),
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
             color: Colors.amber,
           ),
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
             color: Colors.amber,
           ),
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
             color: Colors.amber,
           ),
           Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
             color: Colors.amber,

@@ -19,4 +19,12 @@ class User {
     }
     return data;
   }
+
+  List<User?> listFromToJson(List data) {
+    if (data.isEmpty) return [];
+
+    return data.map((e) {
+      listFromJson(e);
+    }).toList();
+  }
 }

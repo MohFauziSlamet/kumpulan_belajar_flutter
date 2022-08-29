@@ -13,12 +13,7 @@ class ShopItem extends StatelessWidget {
         IconButton(
           onPressed: () {
             shopController.quantity.value--;
-            // if (shopController.quantity != 0) {
-            //   shopController.quantity.value--;
-            // }
-            // if (Get.find<ShopController>(tag: 'total').total.value != 0) {
-            //   Get.find<ShopController>(tag: 'total').total.value--;
-            // }
+
             Get.find<ShopController>(tag: 'total').total.value--;
           },
           icon: Icon(Icons.remove),
@@ -30,6 +25,7 @@ class ShopItem extends StatelessWidget {
         IconButton(
           onPressed: () {
             shopController.quantity.value++;
+
             Get.find<ShopController>(tag: 'total').total.value++;
           },
           icon: Icon(Icons.add),
