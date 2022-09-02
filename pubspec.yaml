@@ -41,7 +41,7 @@ dependencies:
   image_picker: ^0.8.4+4
   dropdown_search: ^2.0.1
   flutter_login: ^3.1.0
-  flutter_bloc: ^7.0.1
+  flutter_bloc: ^8.0.1
   get: ^4.6.1
   shared_preferences: ^2.0.13
   get_storage: ^2.0.3
