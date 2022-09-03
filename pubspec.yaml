@@ -51,6 +51,7 @@ dependencies:
   convex_bottom_bar: ^3.0.0
   google_fonts: ^3.0.1
   flutter_pw_validator: ^1.4.2 # untuk password validation
+  flutter_conditional_rendering: ^2.0.0
 
 dev_dependencies:
   flutter_test:
