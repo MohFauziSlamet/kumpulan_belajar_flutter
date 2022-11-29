@@ -5,7 +5,7 @@ import '../models/player.dart';
 import 'package:http/http.dart' as http;
 
 class AllMahasiswa with ChangeNotifier {
-  List<Mahasiswa> _allMahasiswa = [];
+  final List<Mahasiswa> _allMahasiswa = [];
 
   List<Mahasiswa> get allMahasiswa => _allMahasiswa;
 

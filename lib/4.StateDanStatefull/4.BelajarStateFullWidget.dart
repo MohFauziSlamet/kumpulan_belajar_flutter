@@ -97,16 +97,16 @@ class _MyAppState extends State<MyApp> {
                     textAlign: TextAlign.center,
                   ),
                   ElevatedButton(
-                    child: const Text('Tombol Tambah'),
                     onPressed: tekanTombol,
+                    child: const Text('Tombol Tambah'),
                   ),
                   ElevatedButton(
-                    child: const Text('Tombol kurangi'),
                     onPressed: kurangiNumber,
+                    child: const Text('Tombol kurangi'),
                   ),
                   ElevatedButton(
-                      child: const Text('Reset Number'),
-                      onPressed: resetNumber),
+                      onPressed: resetNumber,
+                      child: const Text('Reset Number')),
                 ],
               ),
             ),

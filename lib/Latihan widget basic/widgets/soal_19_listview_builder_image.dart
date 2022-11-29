@@ -24,7 +24,7 @@ class ListviewAplikasiImage extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.all(25.0),
             child: Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               alignment: Alignment.bottomLeft,
               height: 200,
               decoration: BoxDecoration(
@@ -38,7 +38,7 @@ class ListviewAplikasiImage extends StatelessWidget {
               ),
               child: Text(
                 'Hello ${index + 1}',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 30,
                   color: Colors.white,
                   fontWeight: FontWeight.w400,

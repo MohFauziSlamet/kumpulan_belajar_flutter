@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
       // routes adalah cara lain untuk melakukan navigasi antar screen
       routes: {
         HomePage.nameRoute: (context) => HomePage(),
-        GalleryPage.nameRoute: (context) => GalleryPage(),
-        PhotosPage.nameRoute: (context) => PhotosPage(),
+        GalleryPage.nameRoute: (context) => const GalleryPage(),
+        PhotosPage.nameRoute: (context) => const PhotosPage(),
       },
     );
   }

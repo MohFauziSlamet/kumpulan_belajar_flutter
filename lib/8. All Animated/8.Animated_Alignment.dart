@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
           child: GestureDetector(
             onTap: () => setState(() {}),
             child: AnimatedContainer(
-              duration: Duration(seconds: 2),
+              duration: const Duration(seconds: 2),
               color: Color.fromARGB(
                 255,
                 random.nextInt(256),
@@ -46,14 +46,14 @@ class _MyAppState extends State<MyApp> {
               height: 100.0 + random.nextInt(101),
               child: AnimatedAlign(
                 alignment: click ? Alignment.topLeft : Alignment.bottomRight,
-                duration: Duration(seconds: 2),
+                duration: const Duration(seconds: 2),
                 child: GestureDetector(
                   onTap: () {
                     setState(() {
                       click = !click;
                     });
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.account_box_outlined,
                     size: 50,
                     color: Colors.white,

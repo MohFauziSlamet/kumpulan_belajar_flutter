@@ -42,7 +42,7 @@ class CounterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Latihan Counter dengan GetX'),
+        title: const Text('Latihan Counter dengan GetX'),
         centerTitle: true,
       ),
       body: Column(
@@ -52,14 +52,14 @@ class CounterApp extends StatelessWidget {
             () {
               return Text(
                 'Angka ${counterCntrllr.counter}',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.w700,
                 ),
               );
             },
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -69,7 +69,7 @@ class CounterApp extends StatelessWidget {
                   counterCntrllr.decrement();
                   // print(counterCntrllr.counter);
                 },
-                child: Text(
+                child: const Text(
                   '-',
                   style: TextStyle(
                     fontSize: 16,
@@ -82,7 +82,7 @@ class CounterApp extends StatelessWidget {
                   counterCntrllr.increment();
                   // print(counterCntrllr.counter);
                 },
-                child: Text(
+                child: const Text(
                   '+',
                   style: TextStyle(
                     fontSize: 16,
@@ -97,7 +97,7 @@ class CounterApp extends StatelessWidget {
         onPressed: () {
           counterCntrllr.changeThemes();
         },
-        child: Icon(Icons.change_circle),
+        child: const Icon(Icons.change_circle),
       ),
     );
   }

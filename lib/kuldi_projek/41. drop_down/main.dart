@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:dropdown_search/dropdown_search.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Latihan Dropdown menu'),
+          title: const Text('Latihan Dropdown menu'),
         ),
         // body: Center(
         //   child: DropdownSearch<String>.multiSelection(
@@ -77,7 +77,7 @@ class _MyAppState extends State<MyApp> {
             // popupItemDisabled: ( s) => s.startsWith('I'),
             onChanged: (value) =>
                 print(value?["value"] ?? 'Belum ada yang dipilih'),
-            selectedItem: {
+            selectedItem: const {
               'negara': 'Indonesia',
               'value': 1,
             },

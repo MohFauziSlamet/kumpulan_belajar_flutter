@@ -95,7 +95,7 @@ class PasswordValidation extends StatelessWidget {
                               Get.snackbar(
                                 "Berhasil",
                                 "Password matched",
-                                duration: Duration(seconds: 2),
+                                duration: const Duration(seconds: 2),
                                 snackPosition: SnackPosition.BOTTOM,
                                 backgroundColor: Colors.green,
                               );

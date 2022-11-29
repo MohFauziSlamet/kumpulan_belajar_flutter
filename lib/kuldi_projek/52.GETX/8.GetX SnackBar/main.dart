@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Get Snacbar'),
+        title: const Text('Get Snacbar'),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
@@ -32,14 +32,14 @@ class HomePage extends StatelessWidget {
           Get.snackbar(
             'Ini adalah judul',
             'Ini ada pesannya',
-            titleText: Text(
+            titleText: const Text(
               'ini tittle tambahan',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            messageText: Text(
+            messageText: const Text(
               'ini pesannya',
               style: TextStyle(
                   fontSize: 20,
@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                   color: Colors.black),
             ),
             barBlur: 7,
-            animationDuration: Duration(seconds: 2),
+            animationDuration: const Duration(seconds: 2),
             forwardAnimationCurve: Curves.linearToEaseOut,
             backgroundColor: Colors.green[800],
             snackPosition: SnackPosition.TOP,

@@ -9,7 +9,7 @@ class HomePageBlocCubit extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Counter BlocProvider'),
+        title: const Text('Counter BlocProvider'),
       ),
       body: Center(
           child: Column(
@@ -18,10 +18,10 @@ class HomePageBlocCubit extends StatelessWidget {
           BlocBuilder<CounterCubit, int>(
             builder: (context, state) => Text(
               'Angka saat ini : $state',
-              style: TextStyle(fontSize: 25),
+              style: const TextStyle(fontSize: 25),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Row(
@@ -31,20 +31,19 @@ class HomePageBlocCubit extends StatelessWidget {
                 onPressed: () {
                   return context.read<CounterCubit>().decrement();
                 },
-                icon: Icon(Icons.remove),
+                icon: const Icon(Icons.remove),
               ),
               IconButton(
                 onPressed: () {
                   return context.read<CounterCubit>().increment();
                 },
-                icon: Icon(Icons.add),
+                icon: const Icon(Icons.add),
               ),
             ],
           )
         ],
       )),
     );
-    ;
   }
 }
 

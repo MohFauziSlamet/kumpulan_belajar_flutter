@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Date Field"),
+          title: const Text("Date Field"),
         ),
         body: Container(
           child:
-              Padding(padding: const EdgeInsets.all(8.0), child: NewTaskForm()),
+              const Padding(padding: EdgeInsets.all(8.0), child: NewTaskForm()),
         ),
       ),
     );

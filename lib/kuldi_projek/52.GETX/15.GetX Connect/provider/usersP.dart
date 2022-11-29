@@ -31,14 +31,14 @@ class UserProvider extends GetConnect {
     // url diambil dari final url
     // body diambil dari final body
     // url wajib ditambahkan nama segment / nama colectionnya dengan dot json
-    return post(url + "users.json", body);
+    return post("${url}users.json", body);
   }
 
   // menghapus data dari DB
   // menghapus berdasarkan id , serta segment mana yang ingin dihapus datanya
   // jadi url nya + dengan nama segment nya + id data yang akan dihapus + dot json
   Future<Response> deleteData(String id) {
-    return delete(url + 'users/$id.json');
+    return delete('${url}users/$id.json');
   }
 
   // membuat methode edit (patch)
@@ -63,17 +63,17 @@ class UserProvider extends GetConnect {
     // url diambil dari final url
     // body diambil dari final body
     // url wajib ditambahkan nama segment / nama colectionnya dengan dot json
-    return patch(url + 'users/$id.json', body);
+    return patch('${url}users/$id.json', body);
   }
 
   Future<User?> getSingleUser(int id) async {
-    final response = await get(url + 'users/$id.json');
+    final response = await get('${url}users/$id.json');
 
     return User.fromJson(response.body);
   }
 
   Future<User?> getAllUser() async {
-    final response = await get(url + 'users.json');
+    final response = await get('${url}users.json');
     // print(response.body);
 
     return User.fromJson(response.body);

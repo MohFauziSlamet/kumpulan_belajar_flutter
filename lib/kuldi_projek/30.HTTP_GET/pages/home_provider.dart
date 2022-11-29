@@ -10,7 +10,7 @@ class HomeProvider extends StatelessWidget {
     final dataProvider = Provider.of<HttpProvider>(context, listen: false);
     return Scaffold(
       appBar: AppBar(
-        title: Text("GET - PROVIDER"),
+        title: const Text("GET - PROVIDER"),
       ),
       body: Container(
         width: double.infinity,
@@ -20,7 +20,7 @@ class HomeProvider extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(50),
-              child: Container(
+              child: SizedBox(
                 height: 100,
                 width: 100,
                 child: Consumer<HttpProvider>(
@@ -33,19 +33,19 @@ class HomeProvider extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             FittedBox(
               child: Consumer<HttpProvider>(
                 builder: (context, value, child) => Text(
                   (value.data["id"] == null)
                       ? "ID : Belum ada data"
                       : "ID : ${value.data["id"]}",
-                  style: TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20),
                 ),
               ),
             ),
-            SizedBox(height: 20),
-            FittedBox(child: Text("Name : ", style: TextStyle(fontSize: 20))),
+            const SizedBox(height: 20),
+            const FittedBox(child: Text("Name : ", style: TextStyle(fontSize: 20))),
             FittedBox(
               child: Consumer<HttpProvider>(
                 builder: (context, value, child) => Text(
@@ -55,28 +55,28 @@ class HomeProvider extends StatelessWidget {
                       : value.data["first_name"] +
                           " " +
                           value.data["last_name"],
-                  style: TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20),
                 ),
               ),
             ),
-            SizedBox(height: 20),
-            FittedBox(child: Text("Email : ", style: TextStyle(fontSize: 20))),
+            const SizedBox(height: 20),
+            const FittedBox(child: Text("Email : ", style: TextStyle(fontSize: 20))),
             FittedBox(
               child: Consumer<HttpProvider>(
                 builder: (context, value, child) => Text(
                   (value.data["email"] == null)
                       ? "Belum ada data"
                       : value.data["email"],
-                  style: TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20),
                 ),
               ),
             ),
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
             OutlinedButton(
               onPressed: () {
                 dataProvider.connectApi((1 + Random().nextInt(10)).toString());
               },
-              child: Text(
+              child: const Text(
                 "GET DATA",
                 style: TextStyle(
                   fontSize: 25,

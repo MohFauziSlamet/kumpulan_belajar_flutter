@@ -19,7 +19,7 @@ class ProfilePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("PROFILE"),
+        title: const Text("PROFILE"),
         actions: [
           IconButton(
             onPressed: () => userC.delete(uid).then(
@@ -27,7 +27,7 @@ class ProfilePage extends StatelessWidget {
                 if (deleted) Get.back();
               },
             ),
-            icon: Icon(Icons.delete_forever),
+            icon: const Icon(Icons.delete_forever),
           ),
         ],
       ),
@@ -40,27 +40,27 @@ class ProfilePage extends StatelessWidget {
                 controller: profileC.nameC,
                 autocorrect: false,
                 textInputAction: TextInputAction.next,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               TextField(
                 controller: profileC.emailC,
                 autocorrect: false,
                 keyboardType: TextInputType.emailAddress,
                 textInputAction: TextInputAction.next,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               TextField(
                 controller: profileC.phoneC,
                 autocorrect: false,
                 textInputAction: TextInputAction.done,
                 keyboardType: TextInputType.phone,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                 ),
                 onEditingComplete: () => userC.edit(
@@ -70,7 +70,7 @@ class ProfilePage extends StatelessWidget {
                   profileC.phoneC.text,
                 ),
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               ElevatedButton(
                 onPressed: () => userC.edit(
                   uid,
@@ -78,7 +78,7 @@ class ProfilePage extends StatelessWidget {
                   profileC.emailC.text,
                   profileC.phoneC.text,
                 ),
-                child: Text("UPDATE"),
+                child: const Text("UPDATE"),
               ),
             ],
           ),

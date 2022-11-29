@@ -11,7 +11,7 @@ class HomeProvider extends StatelessWidget {
     //
     return Scaffold(
       appBar: AppBar(
-        title: Text("POST - PROVIDER"),
+        title: const Text("POST - PROVIDER"),
       ),
       body: Container(
         width: double.infinity,
@@ -26,13 +26,13 @@ class HomeProvider extends StatelessWidget {
                     (value.data['id'] == null)
                         ? "ID : Belum ada data"
                         : " ID : ${value.data['id']}",
-                    style: TextStyle(fontSize: 20),
+                    style: const TextStyle(fontSize: 20),
                   );
                 },
               ),
             ),
-            SizedBox(height: 20),
-            FittedBox(child: Text("Name : ", style: TextStyle(fontSize: 20))),
+            const SizedBox(height: 20),
+            const FittedBox(child: Text("Name : ", style: TextStyle(fontSize: 20))),
             FittedBox(
               child: Consumer<HttpProvider>(
                 builder: (context, value, child) {
@@ -40,13 +40,13 @@ class HomeProvider extends StatelessWidget {
                     (value.data['name'] == null)
                         ? "ID : Belum ada data"
                         : " ID : ${value.data['name']}",
-                    style: TextStyle(fontSize: 20),
+                    style: const TextStyle(fontSize: 20),
                   );
                 },
               ),
             ),
-            SizedBox(height: 20),
-            FittedBox(child: Text("Job : ", style: TextStyle(fontSize: 20))),
+            const SizedBox(height: 20),
+            const FittedBox(child: Text("Job : ", style: TextStyle(fontSize: 20))),
             FittedBox(
               child: Consumer<HttpProvider>(
                 builder: (context, value, child) {
@@ -54,13 +54,13 @@ class HomeProvider extends StatelessWidget {
                     (value.data['job'] == null)
                         ? "ID : Belum ada data"
                         : " ID : ${value.data['job']}",
-                    style: TextStyle(fontSize: 20),
+                    style: const TextStyle(fontSize: 20),
                   );
                 },
               ),
             ),
-            SizedBox(height: 20),
-            FittedBox(
+            const SizedBox(height: 20),
+            const FittedBox(
                 child: Text("Created At : ", style: TextStyle(fontSize: 20))),
             FittedBox(
               child: Consumer<HttpProvider>(
@@ -69,24 +69,24 @@ class HomeProvider extends StatelessWidget {
                     (value.data['createdAt'] == null)
                         ? "ID : Belum ada data"
                         : " ID : ${value.data['createdAt']}",
-                    style: TextStyle(fontSize: 20),
+                    style: const TextStyle(fontSize: 20),
                   );
                 },
               ),
             ),
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
             OutlinedButton(
               onPressed: () {
                 //menampilkan pemberitahuan
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
+                  const SnackBar(
                     content: Text("Data berhasil Di post"),
                     duration: Duration(milliseconds: 800),
                   ),
                 );
                 dataProvider.connectApi(' Mauludy', 'psikolog');
               },
-              child: Text(
+              child: const Text(
                 "POST DATA",
                 style: TextStyle(
                   fontSize: 25,

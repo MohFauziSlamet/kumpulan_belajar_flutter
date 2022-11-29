@@ -4,7 +4,7 @@ import './routes/page_route.dart';
 import './pages/home_page.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

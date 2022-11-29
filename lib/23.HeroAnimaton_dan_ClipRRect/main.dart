@@ -36,7 +36,7 @@ class mainPage extends StatelessWidget {
       body: GestureDetector(
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (contex) {
-            return secondPage();
+            return const secondPage();
           }));
         },
         // ClipRRect adl widget yang harus dibungkus oleh widget Hero

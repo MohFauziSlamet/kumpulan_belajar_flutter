@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Animated CrossFade"),
+        title: const Text("Animated CrossFade"),
         centerTitle: true,
       ),
       body: Center(
@@ -45,6 +45,10 @@ class HomePage extends StatelessWidget {
                 secondChild: Container(
                   width: Get.width * 0.5,
                   height: Get.width * 0.5,
+                  decoration: BoxDecoration(
+                    color: Colors.blueAccent,
+                    borderRadius: BorderRadius.circular(200),
+                  ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(200),
                     child: Image.asset(
@@ -52,15 +56,11 @@ class HomePage extends StatelessWidget {
                       fit: BoxFit.fitWidth,
                     ),
                   ),
-                  decoration: BoxDecoration(
-                    color: Colors.blueAccent,
-                    borderRadius: BorderRadius.circular(200),
-                  ),
                 ),
                 crossFadeState: clik.isTrue
                     ? CrossFadeState.showFirst
                     : CrossFadeState.showSecond,
-                duration: Duration(seconds: 1),
+                duration: const Duration(seconds: 1),
               ),
             )),
       ),

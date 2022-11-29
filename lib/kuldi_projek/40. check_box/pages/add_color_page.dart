@@ -21,7 +21,7 @@ class AddColorPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Add Color Page"),
+        title: const Text("Add Color Page"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(30),
@@ -34,7 +34,7 @@ class AddColorPage extends StatelessWidget {
                 controller: titleController,
                 textInputAction: TextInputAction.done,
                 decoration: InputDecoration(
-                  contentPadding: EdgeInsets.symmetric(
+                  contentPadding: const EdgeInsets.symmetric(
                     horizontal: 20,
                   ),
                   labelText: "Input Color",
@@ -45,10 +45,10 @@ class AddColorPage extends StatelessWidget {
                 onEditingComplete: saveData,
               ),
 
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
 
               // menambahkan button save
-              Container(
+              SizedBox(
                 width: double.infinity,
                 height: 45,
                 child: ElevatedButton(
@@ -58,7 +58,7 @@ class AddColorPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30.0),
                     ),
                   ),
-                  child: Text('Save'),
+                  child: const Text('Save'),
                 ),
               ),
             ],

@@ -6,7 +6,6 @@ import './models/http_provider.dart';
 import './pages/home_provider.dart';
 
 // menggunakan state full
-import './pages/home_stateful.dart';
 
 void main() {
   runApp(MyApp());

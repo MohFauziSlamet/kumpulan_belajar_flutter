@@ -10,13 +10,13 @@ class CounterBloc {
   }
 
   // membuat selang penghubung data input
-  StreamController _inputanController = StreamController();
+  final StreamController _inputanController = StreamController();
 
   // stream_sinc sebagai tempat memasukan data
   StreamSink get sinkInputan => _inputanController.sink;
 
   // membuat selang penghubung data output
-  StreamController _outputanController = StreamController();
+  final StreamController _outputanController = StreamController();
 
   // stream_sinc sebagai tempat keluar data
   StreamSink get _sinkOutputan => _outputanController.sink;

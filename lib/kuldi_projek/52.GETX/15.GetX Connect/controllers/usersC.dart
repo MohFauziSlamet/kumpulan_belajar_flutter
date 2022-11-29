@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -103,7 +102,7 @@ class UsersC extends GetxController {
 
   // menghapus data dari db dan local memori
   Future<bool> delete(String? id) async {
-    bool _deleted = false;
+    bool deleted = false;
     await Get.defaultDialog(
       title: "DELETE",
       middleText: "Apakah kamu yakin untuk menghapus data user ini?",
@@ -115,7 +114,7 @@ class UsersC extends GetxController {
           // setelah menghapus dari DB
           // selanjutnya menghapus dari list (local memori)
           users.removeWhere((element) => element.id == id);
-          _deleted = true;
+          deleted = true;
         });
 
         // menutup dialog
@@ -123,7 +122,7 @@ class UsersC extends GetxController {
       },
       textCancel: "Tidak",
     );
-    return _deleted;
+    return deleted;
   }
 
   ///
@@ -135,5 +134,6 @@ class UsersC extends GetxController {
 
   Future<User?> allUser() async {
     var data = userProvider.getAllUser();
+    return null;
   }
 }

@@ -33,7 +33,7 @@ class CartScreen extends StatelessWidget {
               ),
               child: Text(
                 "Total : \$ ${cartData.totalHarga}",
-                style: TextStyle(fontSize: 35),
+                style: const TextStyle(fontSize: 35),
               ),
             ),
           ),
@@ -57,7 +57,7 @@ class CartScreen extends StatelessWidget {
                         cartData.removeCart(
                             cartData.items.values.toList()[index].id);
                       },
-                      icon: Icon(Icons.remove)),
+                      icon: const Icon(Icons.remove)),
                 ),
                 // mengambil data dari provider
                 // karena data yang diambil dalam bentuk map , kita harus ubah dalam bentuk list

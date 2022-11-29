@@ -43,7 +43,7 @@ class StoryItem extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Text(title),
         ],
       ),

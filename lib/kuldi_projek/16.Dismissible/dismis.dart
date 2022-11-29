@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       title: _title,
       home: Scaffold(
         appBar: AppBar(title: const Text(_title)),
-        body: MyStatefulWidget(),
+        body: const MyStatefulWidget(),
       ),
     );
   }
@@ -45,12 +45,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       padding: const EdgeInsets.symmetric(vertical: 16),
       itemBuilder: (BuildContext context, int index) {
         return Dismissible(
-          child: ListTile(
-            title: Text(
-              'Item ${items[index]}',
-            ),
-            subtitle: Text(items.toString()),
-          ),
           background: Container(
             color: Colors.green,
           ),
@@ -108,6 +102,12 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               },
             );
           },
+          child: ListTile(
+            title: Text(
+              'Item ${items[index]}',
+            ),
+            subtitle: Text(items.toString()),
+          ),
         );
       },
     );

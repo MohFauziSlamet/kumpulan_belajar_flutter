@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 // jika scrollDirection.Axis.vertical(atas bawah) , maka widget akan di buat 3 kesamping
 // jika scrollDirection.Axis.horizontal(kiri kanan) , maka widget akan di buat 3 atas bawah
 void main(List<String> args) {
-  runApp(GridviewApp());
+  runApp(const GridviewApp());
 }
 
 class GridviewApp extends StatelessWidget {
@@ -22,95 +22,94 @@ class GridviewApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Latihan Gridview Max axis.extend'),
+          title: const Text('Latihan Gridview Max axis.extend'),
         ),
         body: GridView(
           // dengan memasukan maximum lebar dan tinggi nya sama
-          gridDelegate:
-              SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 400),
+          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 400),
 
           scrollDirection: Axis.vertical,
           // scrollDirection: Axis.horizontal,
           children: [
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('1'),
+              textItem: const Text('1'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('2'),
+              textItem: const Text('2'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('3'),
+              textItem: const Text('3'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('4'),
+              textItem: const Text('4'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('5'),
+              textItem: const Text('5'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('1'),
+              textItem: const Text('1'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('2'),
+              textItem: const Text('2'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('3'),
+              textItem: const Text('3'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('4'),
+              textItem: const Text('4'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('5'),
+              textItem: const Text('5'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('1'),
+              textItem: const Text('1'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('2'),
+              textItem: const Text('2'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('3'),
+              textItem: const Text('3'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('4'),
+              textItem: const Text('4'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('5'),
+              textItem: const Text('5'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('1'),
+              textItem: const Text('1'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('2'),
+              textItem: const Text('2'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('3'),
+              textItem: const Text('3'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('4'),
+              textItem: const Text('4'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('5'),
+              textItem: const Text('5'),
             ),
           ],
         ),
@@ -132,7 +131,7 @@ class ContainerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       color: warna,
       child: Center(
         child: textItem,

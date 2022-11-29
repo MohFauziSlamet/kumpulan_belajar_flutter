@@ -13,7 +13,7 @@ class SingleColor with ChangeNotifier {
   // untuk merubah status dari check box
   // jika true , maka akan diceklis
   void toogleStatus() {
-    this.status = !this.status;
+    status = !status;
 
     // selanjutnya kita tambahkan notifyListeners
     // agar data dapat di update , pada widget yang me listen nya

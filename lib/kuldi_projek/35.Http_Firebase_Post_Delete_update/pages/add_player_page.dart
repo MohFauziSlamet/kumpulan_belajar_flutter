@@ -36,7 +36,7 @@ class AddPlayer extends StatelessWidget {
         (response) {
           // menambahkan notif
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
+            const SnackBar(
               content: Text("Berhasil ditambahkan"),
               duration: Duration(seconds: 2),
             ),
@@ -52,13 +52,13 @@ class AddPlayer extends StatelessWidget {
           builder: (context) {
             return AlertDialog(
               title: Text("Telah Terjadi Error $err"),
-              content: Text("Tidak dapat menambahkan Mahasiswa"),
+              content: const Text("Tidak dapat menambahkan Mahasiswa"),
               actions: [
                 TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text("Oke"),
+                  child: const Text("Oke"),
                 ),
               ],
             );
@@ -69,9 +69,9 @@ class AddPlayer extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tambah Data Mahasiswa"),
+        title: const Text("Tambah Data Mahasiswa"),
         actions: [
-          IconButton(icon: Icon(Icons.save), onPressed: addMahasiswa),
+          IconButton(icon: const Icon(Icons.save), onPressed: addMahasiswa),
         ],
       ),
       body: Padding(
@@ -82,48 +82,48 @@ class AddPlayer extends StatelessWidget {
               TextFormField(
                 autocorrect: false,
                 autofocus: true,
-                decoration: InputDecoration(labelText: "Nama Lengkap"),
+                decoration: const InputDecoration(labelText: "Nama Lengkap"),
                 textInputAction: TextInputAction.next,
                 controller: nameController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Nim"),
+                decoration: const InputDecoration(labelText: "Nim"),
                 textInputAction: TextInputAction.next,
                 controller: nimController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Tempat Lahir"),
+                decoration: const InputDecoration(labelText: "Tempat Lahir"),
                 textInputAction: TextInputAction.next,
                 controller: tempatLahirController,
               ),
-              DatePicker(),
+              const DatePicker(),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Tanggal Lahir"),
+                decoration: const InputDecoration(labelText: "Tanggal Lahir"),
                 textInputAction: TextInputAction.next,
                 controller: tanggalLahirController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Fakultas"),
+                decoration: const InputDecoration(labelText: "Fakultas"),
                 textInputAction: TextInputAction.next,
                 controller: fakultasController,
               ),
               TextFormField(
                   autocorrect: false,
-                  decoration: InputDecoration(labelText: "Jurusan"),
+                  decoration: const InputDecoration(labelText: "Jurusan"),
                   textInputAction: TextInputAction.done,
                   controller: jurusanController,
                   onEditingComplete: addMahasiswa),
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
               Container(
                 width: double.infinity,
                 alignment: Alignment.centerRight,
                 child: OutlinedButton(
                   onPressed: addMahasiswa,
-                  child: Text(
+                  child: const Text(
                     "Submit",
                     style: TextStyle(
                       fontSize: 18,

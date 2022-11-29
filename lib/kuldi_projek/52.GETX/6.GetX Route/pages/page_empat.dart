@@ -8,7 +8,7 @@ class PageEmpat extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page Empat'),
+        title: const Text('Page Empat'),
         centerTitle: true,
       ),
       body: Center(
@@ -16,7 +16,7 @@ class PageEmpat extends StatelessWidget {
           onPressed: () {
             Get.back();
           },
-          child: Text('<< BACK TO PAGE TIGA'),
+          child: const Text('<< BACK TO PAGE TIGA'),
         ),
       ),
     );

@@ -11,7 +11,7 @@ class Cart with ChangeNotifier {
   // value nya , kita ambil dari model CartItem , yang berisi 4 field wajib isi(required)
 
   //  kita buat private
-  Map<String, CartItem> _items = {};
+  final Map<String, CartItem> _items = {};
 
   // lalu kita buat getter
   Map<String, CartItem> get items => _items;

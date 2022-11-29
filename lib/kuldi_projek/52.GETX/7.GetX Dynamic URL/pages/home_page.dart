@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
         centerTitle: true,
       ),
       body: Center(
@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           onPressed: () {
             Get.toNamed(RouteNames.productPage);
           },
-          child: Text('GO TO Product Page >>'),
+          child: const Text('GO TO Product Page >>'),
         ),
       ),
     );

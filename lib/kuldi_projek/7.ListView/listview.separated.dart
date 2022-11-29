@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Listview"),
+          title: const Text("Latihan Listview"),
         ),
         body: ListView.separated(
           // itemCount jumlah list yang mau dibuat
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
             //     ));
 
             // selain container , ada lagi widget divider sebagai jaraknya
-            return Divider(
+            return const Divider(
               thickness: 5,
               // endIndent: 10,
               // indent: 5,

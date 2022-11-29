@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
                         () {
                           widgets.add(
                             Text(
-                              'Data ke - ' + counter.toString(),
+                              'Data ke - $counter',
                               style: const TextStyle(fontSize: 35),
                             ),
                           );

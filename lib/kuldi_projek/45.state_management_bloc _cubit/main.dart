@@ -16,12 +16,11 @@ import 'package:belajar_flutter/kuldi_projek/45.state_management_bloc%20_cubit/b
 import 'package:belajar_flutter/kuldi_projek/45.state_management_bloc%20_cubit/pages/home_page_bloc_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import './pages/home_page_bloc_provider.dart';
 
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -32,7 +31,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: BlocProvider(
         create: (_) => CounterCubit(),
-        child: HomePageBlocCubit(),
+        child: const HomePageBlocCubit(),
       ),
     );
   }

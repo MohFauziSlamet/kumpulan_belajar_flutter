@@ -147,7 +147,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               ],
             ),
           ),
-          SliverToBoxAdapter(child: SizedBox(height: 20)),
+          const SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverGrid.count(
             crossAxisCount: 3,
             children: [
@@ -171,7 +171,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               )
             ],
           ),
-          SliverToBoxAdapter(child: SizedBox(height: 20)),
+          const SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverGrid.extent(
             maxCrossAxisExtent: 150,
             children: [

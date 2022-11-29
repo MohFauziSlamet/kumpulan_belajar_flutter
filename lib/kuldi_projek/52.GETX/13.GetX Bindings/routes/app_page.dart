@@ -4,13 +4,12 @@ import '../routes/route_name.dart';
 import '../pages/count/count.dart';
 import '../pages/home/home.dart';
 import 'package:get/get.dart';
-import '../controller/count_controller.dart';
 
 class AppPages {
   static final routePages = [
     GetPage(
       name: RouteNames.homePageRoute,
-      page: () => HomePage(),
+      page: () => const HomePage(),
     ),
     GetPage(
       name: RouteNames.countPageRoute,

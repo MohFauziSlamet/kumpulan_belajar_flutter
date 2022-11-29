@@ -98,7 +98,7 @@ class _MyAppState extends State<MyApp> {
                     setState(() {
                       widgets.add(
                         Text(
-                          'Barochatul Mauludy ' + counter.toString(),
+                          'Barochatul Mauludy $counter',
                           style: const TextStyle(fontSize: 30),
                         ),
                       );

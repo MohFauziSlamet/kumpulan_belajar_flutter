@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "name": "Flutter (lib/main.dart)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart"
+    },
+    {
+      "name": "Flutter (lib/7.ListView/listview_builder.dart)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/7.ListView/listview_builder.dart"
+    }
+  ]
+}

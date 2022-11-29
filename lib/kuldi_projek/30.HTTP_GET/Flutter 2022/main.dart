@@ -53,19 +53,19 @@ class _HomePageState extends State<HomePage> {
           children: [
             // tempat nampilin get data
             Text(
-              'ID : ${id}',
+              'ID : $id',
               style: const TextStyle(
                 fontSize: 24,
               ),
             ),
             Text(
-              'EMAIL : ${email}',
+              'EMAIL : $email',
               style: const TextStyle(
                 fontSize: 24,
               ),
             ),
             Text(
-              'NAME: ${name}',
+              'NAME: $name',
               style: const TextStyle(
                 fontSize: 24,
               ),
@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                     jsonDecode(hasilResponse.body);
                 if (hasilResponse.statusCode == 200) {
                   // jika berhasil get data
-                  print('Berhasil Get Data : ${hasilJsonDecode}');
+                  print('Berhasil Get Data : $hasilJsonDecode');
                   setState(() {
                     id = hasilJsonDecode['data']['id'].toString();
                     email = hasilJsonDecode['data']['email'].toString();

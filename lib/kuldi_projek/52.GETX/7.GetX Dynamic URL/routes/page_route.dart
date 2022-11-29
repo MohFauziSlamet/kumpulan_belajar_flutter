@@ -8,15 +8,15 @@ class AppPageRoute {
   static final pages = [
     GetPage(
       name: RouteNames.homePage,
-      page: () => HomePage(),
+      page: () => const HomePage(),
     ),
     GetPage(
       name: RouteNames.productPage,
-      page: () => ProductPage(),
+      page: () => const ProductPage(),
     ),
     GetPage(
-      name: RouteNames.productPage + '/:id?',
-      page: () => DetailProductPage(),
+      name: '${RouteNames.productPage}/:id?',
+      page: () => const DetailProductPage(),
     ),
   ];
 }

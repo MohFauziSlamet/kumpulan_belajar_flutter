@@ -73,7 +73,7 @@ class _WidgetCounterState extends State<WidgetCounter> {
       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Text(
           widget.counter.toString(),
-          style: TextStyle(fontSize: 30),
+          style: const TextStyle(fontSize: 30),
         ),
         const SizedBox(
           height: 20,
@@ -84,7 +84,7 @@ class _WidgetCounterState extends State<WidgetCounter> {
                 arguments: widget.counter // mengirim data nilai ke OtherPage
                 );
           },
-          child: Text("goto second page"),
+          child: const Text("goto second page"),
         ),
       ]),
     );

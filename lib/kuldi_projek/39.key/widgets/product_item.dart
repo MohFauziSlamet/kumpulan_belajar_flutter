@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
@@ -8,7 +7,7 @@ import 'package:provider/provider.dart';
 import '../providers/products.dart';
 
 class ProductItem extends StatefulWidget {
-  ProductItem(Key key, this.prodId, this.title, this.date) : super(key: key);
+  const ProductItem(Key key, this.prodId, this.title, this.date) : super(key: key);
 
   final String prodId, title;
 
@@ -47,11 +46,11 @@ class _ProductItemState extends State<ProductItem> {
       leading: CircleAvatar(
         backgroundColor: bgcolor,
       ),
-      title: Text("${widget.title}"),
+      title: Text(widget.title),
       subtitle: Text(DateFormat.yMMMEd().format(widget.date)),
       trailing: IconButton(
         onPressed: () => products.deleteProduct(widget.prodId),
-        icon: Icon(
+        icon: const Icon(
           Icons.delete,
           color: Colors.red,
         ),

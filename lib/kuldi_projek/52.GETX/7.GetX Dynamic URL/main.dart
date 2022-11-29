@@ -9,7 +9,7 @@ import './routes/page_route.dart';
 // Get.back() : sama dengan Navigator.of(context).pop()
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

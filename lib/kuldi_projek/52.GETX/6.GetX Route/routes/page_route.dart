@@ -9,19 +9,19 @@ class AppPageRoute {
   static final pages = [
     GetPage(
       name: RouteNames.page_1,
-      page: () => PageSatu(),
+      page: () => const PageSatu(),
     ),
     GetPage(
       name: RouteNames.page_2,
-      page: () => PageDua(),
+      page: () => const PageDua(),
     ),
     GetPage(
       name: RouteNames.page_3,
-      page: () => PageTiga(),
+      page: () => const PageTiga(),
     ),
     GetPage(
       name: RouteNames.page_4,
-      page: () => PageEmpat(),
+      page: () => const PageEmpat(),
     ),
   ];
 }

@@ -16,11 +16,11 @@ class ShopItem extends StatelessWidget {
 
             Get.find<ShopController>(tag: 'total').total.value--;
           },
-          icon: Icon(Icons.remove),
+          icon: const Icon(Icons.remove),
         ),
         Obx(() => Text(
               '${shopController.quantity}',
-              style: TextStyle(fontSize: 25),
+              style: const TextStyle(fontSize: 25),
             )),
         IconButton(
           onPressed: () {
@@ -28,7 +28,7 @@ class ShopItem extends StatelessWidget {
 
             Get.find<ShopController>(tag: 'total').total.value++;
           },
-          icon: Icon(Icons.add),
+          icon: const Icon(Icons.add),
         ),
       ],
     );

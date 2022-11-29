@@ -70,19 +70,19 @@ class HomePage extends StatelessWidget {
       ),
 
       // index 1
-      Center(
+      const Center(
         child: Text("data 2"),
       ),
       // index 2
-      Center(
+      const Center(
         child: Text("data 3"),
       ),
       // index 3
-      Center(
+      const Center(
         child: Text("data 4"),
       ),
       // index 4
-      Center(
+      const Center(
         child: Text("data 5"),
       ),
     ];
@@ -95,7 +95,7 @@ class HomePage extends StatelessWidget {
         () => widgets[currentIndex.value],
       ),
       bottomNavigationBar: ConvexAppBar(
-          items: [
+          items: const [
             TabItem(icon: Icons.home, title: 'Home'),
             TabItem(icon: Icons.map, title: 'Discovery'),
             TabItem(icon: Icons.add, title: 'Add'),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
       theme: isDark ? dark : light,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Latihan shared preferences'),
+          title: const Text('Latihan shared preferences'),
         ),
         body: Center(
           child: Column(
@@ -62,9 +62,9 @@ class _MyAppState extends State<MyApp> {
             children: [
               Text(
                 "Angka saat ini adalah : ${counter.toString()}",
-                style: TextStyle(fontSize: 30),
+                style: const TextStyle(fontSize: 30),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
@@ -72,13 +72,13 @@ class _MyAppState extends State<MyApp> {
                 children: [
                   ElevatedButton(
                     onPressed: remove,
-                    child: Icon(
+                    child: const Icon(
                       Icons.remove,
                     ),
                   ),
                   ElevatedButton(
                     onPressed: add,
-                    child: Icon(
+                    child: const Icon(
                       Icons.add,
                     ),
                   ),
@@ -89,7 +89,7 @@ class _MyAppState extends State<MyApp> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: changeThemes,
-          child: Icon(Icons.color_lens),
+          child: const Icon(Icons.color_lens),
         ),
       ),
     );

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 void main(List<String> args) {
-  runApp(DeleteApp());
+  runApp(const DeleteApp());
 }
 
 class DeleteApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class DeleteApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomePage(),
     );
   }
@@ -32,11 +32,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Http Delete'),
+        title: const Text('Http Delete'),
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(Icons.get_app),
+            icon: const Icon(Icons.get_app),
             onPressed: () async {
               // mengambil data
               var response =
@@ -57,22 +57,22 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: ListView(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         children: [
           Text(
             data,
-            style: TextStyle(fontSize: 20),
+            style: const TextStyle(fontSize: 20),
           ),
-          SizedBox(height: 20),
-          Divider(
+          const SizedBox(height: 20),
+          const Divider(
             color: Colors.black,
             height: 5,
           ),
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
           ElevatedButton(
             onPressed: () async {
               ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
+                const SnackBar(
                   duration: Duration(seconds: 2),
                   content: Text('Berhasil hapus data'),
                 ),
@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                 data = 'Belum ada data';
               });
             },
-            child: Text('Delete'),
+            child: const Text('Delete'),
           ),
         ],
       ),

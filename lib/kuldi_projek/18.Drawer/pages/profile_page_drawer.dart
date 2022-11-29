@@ -76,7 +76,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -99,7 +99,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -120,7 +120,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -143,7 +143,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -164,7 +164,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -187,7 +187,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -208,7 +208,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -231,7 +231,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -252,7 +252,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -275,7 +275,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -296,7 +296,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -319,52 +319,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
-                          },
-                        ),
-                      );
-                    },
-                    leading: const Icon(
-                      Icons.settings_outlined,
-                      size: 30,
-                    ),
-                    title: const Text(
-                      "Settings",
-                      style: TextStyle(
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
-                  //
-                  ListTile(
-                    onTap: () {
-                      Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return ProfilePageDrawer();
-                          },
-                        ),
-                      );
-                    },
-                    leading: const Icon(
-                      Icons.person_pin,
-                      size: 30,
-                    ),
-                    title: const Text(
-                      "Profile",
-                      style: TextStyle(
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
-
-                  //
-                  ListTile(
-                    onTap: () {
-                      Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -386,7 +341,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -409,7 +364,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -431,7 +386,7 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -454,7 +409,52 @@ class ProfilePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
+                          },
+                        ),
+                      );
+                    },
+                    leading: const Icon(
+                      Icons.settings_outlined,
+                      size: 30,
+                    ),
+                    title: const Text(
+                      "Settings",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                  ),
+                  //
+                  ListTile(
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const ProfilePageDrawer();
+                          },
+                        ),
+                      );
+                    },
+                    leading: const Icon(
+                      Icons.person_pin,
+                      size: 30,
+                    ),
+                    title: const Text(
+                      "Profile",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                  ),
+
+                  //
+                  ListTile(
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );

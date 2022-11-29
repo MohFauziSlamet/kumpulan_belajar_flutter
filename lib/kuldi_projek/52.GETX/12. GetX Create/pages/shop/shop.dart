@@ -10,7 +10,7 @@ class ShopPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Shop page'),
+        title: const Text('Shop page'),
         centerTitle: true,
       ),
       body: ListView.builder(
@@ -20,7 +20,7 @@ class ShopPage extends StatelessWidget {
       floatingActionButton: CircleAvatar(
         child: Obx(() => Text(
               '${shopController.total}',
-              style: TextStyle(fontSize: 25),
+              style: const TextStyle(fontSize: 25),
             )),
       ),
     );

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/player.dart';
 
 class AllMahasiswa with ChangeNotifier {
-  List<Mahasiswa> _allMahasiswa = [];
+  final List<Mahasiswa> _allMahasiswa = [];
 
   List<Mahasiswa> get allMahasiswa => _allMahasiswa;
 
@@ -36,7 +36,7 @@ class AllMahasiswa with ChangeNotifier {
       ),
     );
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
+      const SnackBar(
         content: Text("Berhasil ditambahkan"),
         duration: Duration(seconds: 2),
       ),

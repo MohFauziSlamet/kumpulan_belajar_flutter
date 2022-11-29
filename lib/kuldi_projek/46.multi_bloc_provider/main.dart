@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       child: BlocBuilder<ThemeMultiBloc, bool>(
         builder: (context, state) => MaterialApp(
           theme: (state) ? dark : light,
-          home: HomeMultiBlocProvider(),
+          home: const HomeMultiBlocProvider(),
         ),
       ),
     );

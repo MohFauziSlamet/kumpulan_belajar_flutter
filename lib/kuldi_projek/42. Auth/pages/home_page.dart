@@ -50,11 +50,11 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Data Mahasiswa"),
+        title: const Text("Data Mahasiswa"),
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(Icons.add),
+            icon: const Icon(Icons.add),
             onPressed: () {
               Navigator.pushNamed(context, AddPlayer.routeName);
             },
@@ -77,21 +77,21 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: (allMahasiswaProvider.jumlahMahasiswa == 0)
-          ? Container(
+          ? SizedBox(
               width: double.infinity,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "No Data",
                     style: TextStyle(fontSize: 25),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   OutlinedButton(
                     onPressed: () {
                       Navigator.pushNamed(context, AddPlayer.routeName);
                     },
-                    child: Text(
+                    child: const Text(
                       "Tambah Data Mahasiswa",
                       style: TextStyle(fontSize: 20),
                     ),
@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> {
                       arguments: id,
                     );
                   },
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: AssetImage("assets/person-icon.png"),
                     // backgroundImage: NetworkImage(
                     //   allMahasiswaProvider.allMahasiswa[index].imageUrl,
@@ -124,26 +124,21 @@ class _HomePageState extends State<HomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        child: Text("Nim : " +
-                            allMahasiswaProvider.allMahasiswa[index].nim),
+                        child: Text("Nim : ${allMahasiswaProvider.allMahasiswa[index].nim}"),
                       ),
                       Container(
-                        child: Text("Tempat Lahir : " +
-                            allMahasiswaProvider
-                                .allMahasiswa[index].tempatLahir),
+                        child: Text("Tempat Lahir : ${allMahasiswaProvider
+                                .allMahasiswa[index].tempatLahir}"),
                       ),
                       Container(
-                        child: Text("Tanggal Lahir : " +
-                            allMahasiswaProvider
-                                .allMahasiswa[index].tanggalLahir),
+                        child: Text("Tanggal Lahir : ${allMahasiswaProvider
+                                .allMahasiswa[index].tanggalLahir}"),
                       ),
                       Container(
-                        child: Text("Fakultas : " +
-                            allMahasiswaProvider.allMahasiswa[index].fakultas),
+                        child: Text("Fakultas : ${allMahasiswaProvider.allMahasiswa[index].fakultas}"),
                       ),
                       Container(
-                        child: Text("Jurusan: " +
-                            allMahasiswaProvider.allMahasiswa[index].jurusan),
+                        child: Text("Jurusan: ${allMahasiswaProvider.allMahasiswa[index].jurusan}"),
                       ),
                       Container(
                         child: Text(
@@ -165,7 +160,7 @@ class _HomePageState extends State<HomePage> {
                         );
                       });
                     },
-                    icon: Icon(Icons.delete),
+                    icon: const Icon(Icons.delete),
                   ),
                 );
               },
@@ -186,8 +181,8 @@ class _HomePageState extends State<HomePage> {
           }
         },
         child: (allMahasiswaProvider.jumlahMahasiswa == 0)
-            ? Icon(Icons.no_accounts)
-            : Icon(Icons.delete),
+            ? const Icon(Icons.no_accounts)
+            : const Icon(Icons.delete),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );

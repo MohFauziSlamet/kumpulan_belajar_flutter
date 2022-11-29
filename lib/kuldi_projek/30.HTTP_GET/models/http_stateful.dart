@@ -11,7 +11,7 @@ class HttpStateful {
   //
   static Future<HttpStateful> connectApi(String id) async {
     // kita buat dulu uri url dan kita pasre ke string
-    Uri url = Uri.parse("https://reqres.in/api/users/ " + id);
+    Uri url = Uri.parse("https://reqres.in/api/users/ $id");
 
     // kita meminta data dengan method get
     // karena data belum bisa didapat

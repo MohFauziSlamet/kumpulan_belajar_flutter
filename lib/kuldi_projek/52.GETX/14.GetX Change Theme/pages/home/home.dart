@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
         centerTitle: true,
         actions: [
           IconButton(
@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
               Get.changeTheme(
                   Get.isDarkMode ? ThemeData.light() : ThemeData.dark());
             },
-            icon: Icon(Icons.refresh),
+            icon: const Icon(Icons.refresh),
           ),
         ],
       ),
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
             // dengan menggunakanan nama sebagai route nya
             Get.toNamed(RouteNames.countPageRoute);
           },
-          child: Text('Next >>'),
+          child: const Text('Next >>'),
         ),
       ),
     );

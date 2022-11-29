@@ -87,7 +87,7 @@ class AuthPage with ChangeNotifier {
 
       //
     } catch (err) {
-      throw err;
+      rethrow;
     }
   }
 
@@ -135,7 +135,7 @@ class AuthPage with ChangeNotifier {
       // selanjutnya kita notiflister , agar dapat di consume oleh provider
       notifyListeners();
     } catch (err) {
-      throw err;
+      rethrow;
     }
   }
 }

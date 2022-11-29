@@ -7,11 +7,11 @@ class AppPageRoute {
   static final pages = [
     GetPage(
       name: RouteNames.DetailScreen,
-      page: () => DetailScreen(),
+      page: () => const DetailScreen(),
     ),
     GetPage(
       name: RouteNames.HomeScreen,
-      page: () => HomeScreen(),
+      page: () => const HomeScreen(),
     ),
   ];
 }

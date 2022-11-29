@@ -17,7 +17,7 @@ class HomePage extends GetView<MyC> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
         centerTitle: true,
       ),
       body: Center(
@@ -29,27 +29,27 @@ class HomePage extends GetView<MyC> {
                 children: [
                   Text(
                     "ID : ${state!['id']}",
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                   Text(
                     "Email : ${state['email']}",
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                   Text(
                     "Nama Lengkap : ${state['first_name']} ${state['last_name']}",
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                   Image.network("${state['avatar']}"),
                 ],
               ),
               // widget yang akan ditampilkan ketika state masih loading
-              onLoading: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 40),
+              onLoading: const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 40),
                 child: LinearProgressIndicator(
                   backgroundColor: Colors.amber,
                 ),
               ),
-              onEmpty: Text(
+              onEmpty: const Text(
                 'Belum ada data...',
                 style: TextStyle(fontSize: 25),
               ),

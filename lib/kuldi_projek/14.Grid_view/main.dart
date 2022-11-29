@@ -27,12 +27,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Gridview"),
+          title: const Text("Latihan Gridview"),
           centerTitle: true,
         ),
         body: GridView(
-          padding: EdgeInsets.all(20),
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          padding: const EdgeInsets.all(20),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               childAspectRatio: 5 / 5,
               // jumlah  kolom grid view
               crossAxisCount: 2,

@@ -9,7 +9,7 @@ class PageSatu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page Satu'),
+        title: const Text('Page Satu'),
         centerTitle: true,
       ),
       body: Center(
@@ -17,7 +17,7 @@ class PageSatu extends StatelessWidget {
           onPressed: () {
             Get.toNamed(RouteNames.page_2);
           },
-          child: Text('GO TO PAGE DUA >>'),
+          child: const Text('GO TO PAGE DUA >>'),
         ),
       ),
     );

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         create: (context) {
           return Counter();
         },
-        child: homeScreen(),
+        child: const homeScreen(),
       ),
     );
   }
@@ -45,7 +45,7 @@ class homeScreen extends StatelessWidget {
           Consumer<Counter>(builder: (context, value, child) {
             return Text(
               value.counter.toString(),
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 30,
               ),
             );

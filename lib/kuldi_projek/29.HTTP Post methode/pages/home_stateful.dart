@@ -14,7 +14,7 @@ class _HomeStatefulState extends State<HomeStateful> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("POST - STATEFULL"),
+        title: const Text("POST - STATEFULL"),
         centerTitle: true,
       ),
       body: Container(
@@ -28,17 +28,17 @@ class _HomeStatefulState extends State<HomeStateful> {
                 (dataResponse.id == "")
                     ? " ID : Belum ada data"
                     : "ID : ${dataResponse.id}",
-                style: TextStyle(fontSize: 20),
+                style: const TextStyle(fontSize: 20),
               ),
             ),
-            SizedBox(height: 20),
-            FittedBox(child: Text("Name : ", style: TextStyle(fontSize: 20))),
+            const SizedBox(height: 20),
+            const FittedBox(child: Text("Name : ", style: TextStyle(fontSize: 20))),
             FittedBox(
               child: Text(
                 (dataResponse.name == "")
                     ? " ID : Belum ada data"
                     : "ID : ${dataResponse.name}",
-                style: TextStyle(fontSize: 20),
+                style: const TextStyle(fontSize: 20),
               ),
             ),
             const SizedBox(height: 20),
@@ -49,26 +49,26 @@ class _HomeStatefulState extends State<HomeStateful> {
                 (dataResponse.job == "")
                     ? " ID : Belum ada data"
                     : "ID : ${dataResponse.job}",
-                style: TextStyle(fontSize: 20),
+                style: const TextStyle(fontSize: 20),
               ),
             ),
-            SizedBox(height: 20),
-            FittedBox(
+            const SizedBox(height: 20),
+            const FittedBox(
                 child: Text("Created At : ", style: TextStyle(fontSize: 20))),
             FittedBox(
               child: Text(
                 (dataResponse.createdAt == "")
                     ? " ID : Belum ada data"
                     : "ID : ${dataResponse.createdAt}",
-                style: TextStyle(fontSize: 20),
+                style: const TextStyle(fontSize: 20),
               ),
             ),
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
             OutlinedButton(
               onPressed: () {
                 //menampilkan pemberitahuan
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
+                  const SnackBar(
                     content: Text("Data berhasil Di post"),
                     duration: Duration(milliseconds: 800),
                   ),
@@ -84,7 +84,7 @@ class _HomeStatefulState extends State<HomeStateful> {
                   },
                 );
               },
-              child: Text(
+              child: const Text(
                 "POST DATA",
                 style: TextStyle(
                   fontSize: 25,

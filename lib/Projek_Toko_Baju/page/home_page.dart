@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Modiste Khas Amey'),
+          title: const Text('Modiste Khas Amey'),
           actions: [
             GestureDetector(
               onTap: () {},
@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.white70,
                   borderRadius: BorderRadius.circular(7),
                 ),
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 width: 80,
                 child: const Center(
                   child: Text(
@@ -39,20 +39,20 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 20,
             ),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white70,
                 shape: BoxShape.circle,
               ),
-              margin: EdgeInsets.all(8),
+              margin: const EdgeInsets.all(8),
               width: 50,
             ),
           ],
         ),
-        body: DetailHomePage(),
+        body: const DetailHomePage(),
       ),
     );
   }

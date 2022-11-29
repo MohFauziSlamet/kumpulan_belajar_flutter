@@ -8,7 +8,7 @@ class OtherPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Other Page"),
+        title: const Text("Other Page"),
       ),
       body: Center(
         child: ElevatedButton(
@@ -20,7 +20,7 @@ class OtherPage extends StatelessWidget {
                   as int, // kita balikin lagi nilai , agar saat kembali. nilai tidak berubah
             );
           },
-          child: Text("GOto counter page"),
+          child: const Text("GOto counter page"),
         ),
       ),
     );

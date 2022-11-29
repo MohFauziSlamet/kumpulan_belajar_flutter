@@ -29,6 +29,8 @@ class ProductDetailScreen extends StatelessWidget {
           Consumer<Cart>(
             builder: (context, value, child) {
               return Badge(
+                value: value.jumlah.toString(),
+                color: Colors.amber,
                 child: IconButton(
                   onPressed: () {
                     Navigator.of(context).pushNamed(
@@ -39,8 +41,6 @@ class ProductDetailScreen extends StatelessWidget {
                     Icons.shopping_cart,
                   ),
                 ),
-                value: value.jumlah.toString(),
-                color: Colors.amber,
               );
             },
           )

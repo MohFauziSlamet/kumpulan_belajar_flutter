@@ -29,14 +29,14 @@ class _MyAppState extends State<MyApp> {
           title: Container(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
+              children: const [
+                Text(
                   "Latihan Text Field",
                   style: TextStyle(color: Colors.black, fontSize: 16),
                 ),
-                Container(
+                SizedBox(
                   width: 180,
-                  child: const Text(
+                  child: Text(
                     "Latihan membuat textfield dengan input user",
                     style: TextStyle(color: Colors.black, fontSize: 10),
                     maxLines: 2,
@@ -48,19 +48,19 @@ class _MyAppState extends State<MyApp> {
           actions: <Widget>[
             IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.settings,
                   color: Colors.black,
                 )),
             IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.logout_sharp,
                   color: Colors.black,
                 )),
           ],
           flexibleSpace: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 gradient: LinearGradient(
                     colors: [Colors.blue, Colors.purple],
                     begin: FractionalOffset.topLeft,

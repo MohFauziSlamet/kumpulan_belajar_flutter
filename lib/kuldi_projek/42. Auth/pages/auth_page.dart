@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
 import 'package:provider/provider.dart';
 import './home_page.dart';
-import './auth_page.dart';
 import '../providers/auth.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -12,7 +11,7 @@ class LoginScreen extends StatefulWidget {
 
 /// data auth dari [AuthPage
 class _LoginScreenState extends State<LoginScreen> {
-  Duration get loginTime => Duration(milliseconds: 2250);
+  Duration get loginTime => const Duration(milliseconds: 2250);
 
   /// jika tidak ada error , maka akan langsung diarahakan ke [HomePage
   Future<String?> _authUserSignUp(SignupData data) {

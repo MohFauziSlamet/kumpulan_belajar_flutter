@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Text widget'),
@@ -50,13 +51,11 @@ class MyApp extends StatelessWidget {
               // margin: EdgeInsets.all(5),
               decoration: const BoxDecoration(
                   // borderRadius: BorderRadius.circular(20),
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: <Color>[
-                    Colors.lightGreenAccent,
-                    Colors.purpleAccent
-                  ])),
+                  gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: <Color>[
+                Colors.lightGreenAccent,
+                Colors.purpleAccent,
+                Colors.blue,
+              ])),
             ),
             ListView(
               children: [
@@ -84,18 +83,15 @@ class MyApp extends StatelessWidget {
                       size: 70,
                     )),
                     const SizedBox(height: 20),
-                    const Text("1.Tanpa tambahan apapun ",
-                        style: TextStyle(fontSize: 18, color: Colors.black)),
+                    const Text("1.Tanpa tambahan apapun ", style: TextStyle(fontSize: 18, color: Colors.black)),
                     Container(
                       margin: const EdgeInsets.all(10),
                       width: 150,
                       height: 50,
                       color: Colors.lightBlue,
-                      child: const Text(
-                          'saya sedang melatih kemampuan flutter saya'),
+                      child: const Text('saya sedang melatih kemampuan flutter saya'),
                     ),
-                    const Text("2.Dengan tambahan properti MaxLines 2 ",
-                        style: TextStyle(fontSize: 18, color: Colors.black)),
+                    const Text("2.Dengan tambahan properti MaxLines 2 ", style: TextStyle(fontSize: 18, color: Colors.black)),
                     Container(
                       margin: const EdgeInsets.all(10),
                       width: 150,
@@ -169,8 +165,7 @@ class MyApp extends StatelessWidget {
                       child: const Text(
                         'saya sedang melatih kemampuan flutter saya',
                         maxLines: 2,
-                        overflow:
-                            TextOverflow.visible, // text langsung dipotong
+                        overflow: TextOverflow.visible, // text langsung dipotong
                       ),
                     ),
                     const Text(
@@ -202,13 +197,10 @@ class MyApp extends StatelessWidget {
                       child: const Text(
                         'saya sedang melatih kemampuan flutter saya',
                         // maxLines: 2,
-                        softWrap:
-                            true, // dicetak apaadanya sesuai dengan jumlah text
+                        softWrap: true, // dicetak apaadanya sesuai dengan jumlah text
                       ),
                     ),
-                    const Text("9.Dengan tambahan properti TextAlign.Center ",
-                        style: TextStyle(fontSize: 18, color: Colors.black),
-                        textAlign: TextAlign.center),
+                    const Text("9.Dengan tambahan properti TextAlign.Center ", style: TextStyle(fontSize: 18, color: Colors.black), textAlign: TextAlign.center),
                     Container(
                       margin: const EdgeInsets.all(10),
                       width: 150,
@@ -219,9 +211,7 @@ class MyApp extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                     ),
-                    const Text("10.Dengan tambahan properti TextAlign.End ",
-                        style: TextStyle(fontSize: 18, color: Colors.black),
-                        textAlign: TextAlign.center),
+                    const Text("10.Dengan tambahan properti TextAlign.End ", style: TextStyle(fontSize: 18, color: Colors.black), textAlign: TextAlign.center),
                     Container(
                       margin: const EdgeInsets.all(10),
                       width: 150,
@@ -319,8 +309,7 @@ class MyApp extends StatelessWidget {
                       color: Colors.lightBlue,
                       child: const Text(
                         'saya sedang melatih kemampuan flutter saya',
-                        style: TextStyle(
-                            color: Colors.white, fontStyle: FontStyle.italic),
+                        style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic),
                       ),
                     ),
                     const Text(
@@ -335,10 +324,7 @@ class MyApp extends StatelessWidget {
                       color: Colors.lightBlue,
                       child: const Text(
                         'saya sedang melatih kemampuan flutter saya',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontStyle: FontStyle.italic,
-                            fontWeight: FontWeight.w700),
+                        style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic, fontWeight: FontWeight.w700),
                       ),
                     ),
                   ],

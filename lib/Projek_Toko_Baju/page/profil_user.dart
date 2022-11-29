@@ -7,7 +7,7 @@ class ProfilUser extends StatelessWidget {
   Widget build(BuildContext context) {
     return FittedBox(
       child: Row(
-        children: [],
+        children: const [],
       ),
     );
   }

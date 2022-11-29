@@ -31,23 +31,17 @@ class HomePageModel extends StatelessWidget {
 
       //
       body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             childAspectRatio: 3 / 5,
             mainAxisSpacing: 10,
             crossAxisSpacing: 10,
             crossAxisCount: 2),
         itemBuilder: (context, index) {
           return GridTile(
-            child: Image(
-              image: AssetImage(
-                dummyData[index].imageUrl,
-              ),
-            ),
-            //
             footer: Container(
               color: Colors.grey,
-              margin: EdgeInsets.only(bottom: 25),
-              padding: EdgeInsets.all(10),
+              margin: const EdgeInsets.only(bottom: 25),
+              padding: const EdgeInsets.all(10),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -55,6 +49,11 @@ class HomePageModel extends StatelessWidget {
                   Text(dummyData[index].harga.toString()),
                   Text(dummyData[index].deskripsi),
                 ],
+              ),
+            ),
+            child: Image(
+              image: AssetImage(
+                dummyData[index].imageUrl,
               ),
             ),
           );

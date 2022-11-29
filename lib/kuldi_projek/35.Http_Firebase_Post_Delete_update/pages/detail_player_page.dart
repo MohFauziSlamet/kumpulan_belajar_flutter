@@ -28,7 +28,7 @@ class DetailPlayer extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("DETAIL PLAYER"),
+        title: const Text("DETAIL PLAYER"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -40,7 +40,7 @@ class DetailPlayer extends StatelessWidget {
                 child: Container(
                   // width: 100,
                   height: 100,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     // color: Colors.blue,
                     image: DecorationImage(
                         fit: BoxFit.contain,
@@ -53,43 +53,43 @@ class DetailPlayer extends StatelessWidget {
               TextFormField(
                 autocorrect: false,
                 autofocus: true,
-                decoration: InputDecoration(labelText: "Nama"),
+                decoration: const InputDecoration(labelText: "Nama"),
                 textInputAction: TextInputAction.next,
                 controller: nameController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Nim"),
+                decoration: const InputDecoration(labelText: "Nim"),
                 textInputAction: TextInputAction.next,
                 controller: nimController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Tempat Lahir"),
+                decoration: const InputDecoration(labelText: "Tempat Lahir"),
                 textInputAction: TextInputAction.next,
                 controller: tempatLahirController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Tanggal Lahir"),
+                decoration: const InputDecoration(labelText: "Tanggal Lahir"),
                 textInputAction: TextInputAction.next,
                 controller: tanggalLahirController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Fakultas"),
+                decoration: const InputDecoration(labelText: "Fakultas"),
                 textInputAction: TextInputAction.next,
                 controller: fakultasController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Jurusan"),
+                decoration: const InputDecoration(labelText: "Jurusan"),
                 textInputAction: TextInputAction.next,
                 controller: jurusanController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Jurusan"),
+                decoration: const InputDecoration(labelText: "Jurusan"),
                 textInputAction: TextInputAction.done,
                 controller: jurusanController,
                 onEditingComplete: () {
@@ -116,7 +116,7 @@ class DetailPlayer extends StatelessWidget {
                   );
                 },
               ),
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
               Container(
                 width: double.infinity,
                 alignment: Alignment.centerRight,
@@ -144,7 +144,7 @@ class DetailPlayer extends StatelessWidget {
                       },
                     );
                   },
-                  child: Text(
+                  child: const Text(
                     "Edit",
                     style: TextStyle(
                       fontSize: 18,

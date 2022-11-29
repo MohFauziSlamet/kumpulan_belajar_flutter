@@ -16,11 +16,11 @@ class InforamsiItem extends StatelessWidget {
       children: [
         Text(
           value,
-          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             letterSpacing: 2,
           ),
         ),

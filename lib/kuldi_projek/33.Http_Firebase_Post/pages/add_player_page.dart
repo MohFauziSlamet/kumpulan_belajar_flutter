@@ -22,10 +22,10 @@ class AddPlayer extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tambah Data Mahasiswa"),
+        title: const Text("Tambah Data Mahasiswa"),
         actions: [
           IconButton(
-            icon: Icon(Icons.save),
+            icon: const Icon(Icons.save),
             onPressed: () {
               // data controller
               // nama
@@ -58,43 +58,43 @@ class AddPlayer extends StatelessWidget {
               TextFormField(
                 autocorrect: false,
                 autofocus: true,
-                decoration: InputDecoration(labelText: "Nama Lengkap"),
+                decoration: const InputDecoration(labelText: "Nama Lengkap"),
                 textInputAction: TextInputAction.next,
                 controller: nameController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Nim"),
+                decoration: const InputDecoration(labelText: "Nim"),
                 textInputAction: TextInputAction.next,
                 controller: nimController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Tempat Lahir"),
+                decoration: const InputDecoration(labelText: "Tempat Lahir"),
                 textInputAction: TextInputAction.next,
                 controller: tempatLahirController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Tanggal Lahir"),
+                decoration: const InputDecoration(labelText: "Tanggal Lahir"),
                 textInputAction: TextInputAction.next,
                 controller: tanggalLahirController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Fakultas"),
+                decoration: const InputDecoration(labelText: "Fakultas"),
                 textInputAction: TextInputAction.next,
                 controller: fakultasController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Jurusan"),
+                decoration: const InputDecoration(labelText: "Jurusan"),
                 textInputAction: TextInputAction.next,
                 controller: jurusanController,
               ),
               TextFormField(
                 autocorrect: false,
-                decoration: InputDecoration(labelText: "Image URL"),
+                decoration: const InputDecoration(labelText: "Image URL"),
                 textInputAction: TextInputAction.done,
                 controller: imageController,
                 onEditingComplete: () {
@@ -111,7 +111,7 @@ class AddPlayer extends StatelessWidget {
                   Navigator.pop(context);
                 },
               ),
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
               Container(
                 width: double.infinity,
                 alignment: Alignment.centerRight,
@@ -129,7 +129,7 @@ class AddPlayer extends StatelessWidget {
                     );
                     Navigator.pop(context);
                   },
-                  child: Text(
+                  child: const Text(
                     "Submit",
                     style: TextStyle(
                       fontSize: 18,

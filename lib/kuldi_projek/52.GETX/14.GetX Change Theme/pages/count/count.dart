@@ -8,7 +8,7 @@ class CountPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Count Page'),
+          title: const Text('Count Page'),
           centerTitle: true,
         ),
         body: Column(
@@ -16,9 +16,9 @@ class CountPage extends StatelessWidget {
           children: [
             Obx(() => Text(
                   '${countController.count}',
-                  style: TextStyle(fontSize: 25),
+                  style: const TextStyle(fontSize: 25),
                 )),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
@@ -28,13 +28,13 @@ class CountPage extends StatelessWidget {
                   onPressed: () {
                     countController.mines();
                   },
-                  child: Icon(Icons.remove),
+                  child: const Icon(Icons.remove),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     countController.add();
                   },
-                  child: Icon(Icons.add),
+                  child: const Icon(Icons.add),
                 ),
               ],
             )

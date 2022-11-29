@@ -10,7 +10,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login Page'),
+        title: const Text('Login Page'),
         centerTitle: true,
       ),
       body: Padding(
@@ -21,7 +21,7 @@ class LoginPage extends StatelessWidget {
             TextField(
               autocorrect: false,
               controller: loginConFind.emailC,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 label: Text(
                   'Email',
@@ -29,14 +29,14 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Obx(
               () => TextField(
                 autocorrect: false,
                 controller: loginConFind.passwordC,
                 obscureText: loginConFind.hidden.value,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
                   suffixIcon: IconButton(
                     onPressed: () {
                       // toggle digunakan untuk mengubah nilai boolean
@@ -46,23 +46,23 @@ class LoginPage extends StatelessWidget {
                       loginConFind.hidden.toggle();
                     },
                     icon: loginConFind.hidden.isTrue
-                        ? Icon(Icons.remove_red_eye)
-                        : Icon(Icons.remove_red_eye_outlined),
+                        ? const Icon(Icons.remove_red_eye)
+                        : const Icon(Icons.remove_red_eye_outlined),
                   ),
-                  label: Text(
+                  label: const Text(
                     'Password',
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // remember me
             Obx(
               () => CheckboxListTile(
                 value: loginConFind.rememberMe.value,
                 onChanged: (value) => loginConFind.rememberMe.toggle(),
-                title: Text('Remember me'),
+                title: const Text('Remember me'),
                 // mengubah posisi chekbox
                 controlAffinity: ListTileControlAffinity.leading,
               ),
@@ -86,7 +86,7 @@ class LoginPage extends StatelessWidget {
                     loginConFind.rememberMe.value,
                   );
                 },
-                child: Text(
+                child: const Text(
                   'LOGIN',
                   style: TextStyle(fontSize: 20, letterSpacing: 5),
                 ),

@@ -15,7 +15,7 @@ class _HomeMultiBlocListenerState extends State<HomeMultiBlocListener> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Counter Bloc Listener'),
+        title: const Text('Counter Bloc Listener'),
       ),
       body: Center(
         child: Column(
@@ -27,7 +27,7 @@ class _HomeMultiBlocListenerState extends State<HomeMultiBlocListener> {
                 if (state > 10) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      duration: Duration(milliseconds: 500),
+                      duration: const Duration(milliseconds: 500),
                       content: Text('Lebih dari ${state - 1}'),
                     ),
                   );
@@ -38,11 +38,11 @@ class _HomeMultiBlocListenerState extends State<HomeMultiBlocListener> {
                   // pada blocbuilder . tidak dapat memberikan pengkondisisan
                   // pada blocbuilder hanya membuild saja , membuat sesuatu
                   'Angka saat ini : $state',
-                  style: TextStyle(fontSize: 25),
+                  style: const TextStyle(fontSize: 25),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Row(
@@ -52,13 +52,13 @@ class _HomeMultiBlocListenerState extends State<HomeMultiBlocListener> {
                   onPressed: () {
                     return context.read<CounterMultiBloc>().decrement();
                   },
-                  icon: Icon(Icons.remove),
+                  icon: const Icon(Icons.remove),
                 ),
                 IconButton(
                   onPressed: () {
                     return context.read<CounterMultiBloc>().increment();
                   },
-                  icon: Icon(Icons.add),
+                  icon: const Icon(Icons.add),
                 ),
               ],
             )
@@ -67,7 +67,7 @@ class _HomeMultiBlocListenerState extends State<HomeMultiBlocListener> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => context.read<ThemeMultiBloc>().changeTheme(),
-        child: Icon(Icons.color_lens),
+        child: const Icon(Icons.color_lens),
       ),
     );
   }

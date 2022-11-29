@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -132,13 +132,13 @@ class _HomePageState extends State<HomePage> {
             //   child: const Text("Date Picker"),
             // ),
             // SizedBox(height: 20),
-            Text("========================"),
-            SizedBox(height: 20),
+            const Text("========================"),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black),
                   ),
@@ -219,7 +219,7 @@ class _HomePageState extends State<HomePage> {
                         },
                       );
                     },
-                    icon: Icon(Icons.calendar_month_outlined))
+                    icon: const Icon(Icons.calendar_month_outlined))
               ],
             ),
           ],

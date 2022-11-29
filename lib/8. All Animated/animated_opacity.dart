@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Animated CrossFade"),
+        title: const Text("Animated CrossFade"),
         centerTitle: true,
       ),
       body: Center(
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                   clikContainer.toggle();
                 },
                 child: AnimatedOpacity(
-                  duration: Duration(seconds: 1),
+                  duration: const Duration(seconds: 1),
                   opacity: clikContainer.isTrue ? 0.2 : 1,
                   child: Container(
                     width: context.width * 0.4,
@@ -55,8 +55,8 @@ class HomePage extends StatelessWidget {
                 },
                 child: AnimatedOpacity(
                   opacity: clikLogo.isTrue ? 0.2 : 1,
-                  duration: Duration(seconds: 1),
-                  child: FlutterLogo(
+                  duration: const Duration(seconds: 1),
+                  child: const FlutterLogo(
                     size: 250,
                   ),
                 ),

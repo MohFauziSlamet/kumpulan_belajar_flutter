@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -66,7 +65,7 @@ class MyContainer extends StatelessWidget {
 
   // untuk mengambil tinggi dan lebar parent , kita menggunakan constraints
 
-  MyContainer(
+  const MyContainer(
     this.widthApp,
   );
   @override

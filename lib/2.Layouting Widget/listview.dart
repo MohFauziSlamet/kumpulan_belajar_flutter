@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 // jika scrollDirection bernilai Axis.horizontal (kiri kanan) , maka
 // height akan infinity (sesuai tinggi layar)
 void main(List<String> args) {
-  runApp(ListviewApp());
+  runApp(const ListviewApp());
 }
 
 class ListviewApp extends StatelessWidget {
@@ -18,7 +18,7 @@ class ListviewApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Latihan Listview'),
+          title: const Text('Latihan Listview'),
         ),
         body: ListView(
           scrollDirection: Axis.horizontal,
@@ -26,39 +26,39 @@ class ListviewApp extends StatelessWidget {
           children: [
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('Container 1'),
+              textItem: const Text('Container 1'),
             ),
             ContainerItem(
               warna: Colors.amber.shade300,
-              textItem: Text('Container 2'),
+              textItem: const Text('Container 2'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('Container 3'),
+              textItem: const Text('Container 3'),
             ),
             ContainerItem(
               warna: Colors.amber.shade300,
-              textItem: Text('Container 4'),
+              textItem: const Text('Container 4'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('Container 1'),
+              textItem: const Text('Container 1'),
             ),
             ContainerItem(
               warna: Colors.amber.shade300,
-              textItem: Text('Container 5'),
+              textItem: const Text('Container 5'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('Container 6'),
+              textItem: const Text('Container 6'),
             ),
             ContainerItem(
               warna: Colors.amber.shade300,
-              textItem: Text('Container 7'),
+              textItem: const Text('Container 7'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('Container 8'),
+              textItem: const Text('Container 8'),
             ),
           ],
         ),
@@ -80,7 +80,7 @@ class ContainerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       width: 100,
       height: 100,
       color: warna,

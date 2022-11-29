@@ -5,12 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeScreen extends GetView<HomeController> {
+  @override
   final controller = Get.put(HomeController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Product'),
+        title: const Text('Home Product'),
         centerTitle: true,
       ),
       body: Center(
@@ -18,9 +19,9 @@ class HomeScreen extends GetView<HomeController> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             BoxMuterMuter(controller.animationController),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             BoxMuterMuter(controller.animationController),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             BoxMuterMuter(controller.animationController),
           ],
         ),
@@ -31,7 +32,7 @@ class HomeScreen extends GetView<HomeController> {
 
 class BoxMuterMuter extends AnimatedWidget {
   final animation;
-  BoxMuterMuter(this.animation) : super(listenable: animation);
+  const BoxMuterMuter(this.animation) : super(listenable: animation);
 
   get progres => listenable as Animation<double>;
   @override
@@ -42,7 +43,7 @@ class BoxMuterMuter extends AnimatedWidget {
         height: 100,
         width: 100,
         color: Colors.blue,
-        child: Center(
+        child: const Center(
           child: Text(
             "Hello",
             style: TextStyle(fontSize: 30),

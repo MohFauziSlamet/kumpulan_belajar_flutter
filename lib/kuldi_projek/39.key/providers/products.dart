@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/product.dart';
 
 class Products extends ChangeNotifier {
-  List<Product> _data = [];
+  final List<Product> _data = [];
 
   List<Product> get allProducts => _data;
 

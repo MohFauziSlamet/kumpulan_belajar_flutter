@@ -27,14 +27,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Covid 19'),
+        title: const Text('Covid 19'),
         centerTitle: true,
       ),
       body: FutureBuilder(
         future: getSummary(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(
+            return const Center(
               child: Text(
                 'LOADING DATA ...',
                 style: TextStyle(

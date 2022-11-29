@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Latihan Media Query"),
         ),
-        body: mainPage(),
+        body: const mainPage(),
       ),
     );
   }

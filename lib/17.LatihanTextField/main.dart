@@ -81,7 +81,7 @@ class _MyAppState extends State<MyApp> {
           child: ListView(
             children: [
               TextField(
-                decoration: InputDecoration(),
+                decoration: const InputDecoration(),
                 // obscureText: true, // digunakan untu membuat tulisan menjadi tanda bintang, seperti password
                 onChanged: (value) {
                   // digunakan untuk mengambil nilai dan merefresh tampilan

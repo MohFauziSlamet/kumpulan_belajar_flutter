@@ -7,7 +7,7 @@ import './color.dart';
 class MultiColor with ChangeNotifier {
   // list of SingleColor , class yang berisi struktur model nya
   // kita buat datanya privat
-  List<SingleColor> _colors = [];
+  final List<SingleColor> _colors = [];
 
   // kita buat getter , untuk mengakses datanya
   List<SingleColor> get colors => _colors;
@@ -42,7 +42,7 @@ class MultiColor with ChangeNotifier {
         throw (hasil.statusCode);
       }
     } catch (error) {
-      throw (error);
+      rethrow;
     }
   }
 
@@ -52,15 +52,15 @@ class MultiColor with ChangeNotifier {
     // jika nilai yang didapat true
     // maka semua yang ada didalam list , dibuah statusnya menjadi true
     if (nilai!) {
-      _colors.forEach((element) {
+      for (var element in _colors) {
         element.status = true;
-      });
+      }
     } else {
       // jika nilai yang didapat false
       // maka semua yang ada didalam list , dibuah statusnya menjadi false
-      _colors.forEach((element) {
+      for (var element in _colors) {
         element.status = false;
-      });
+      }
     }
     notifyListeners();
   }
@@ -107,7 +107,7 @@ class MultiColor with ChangeNotifier {
         throw (hasil.statusCode);
       }
     } catch (error) {
-      throw (error);
+      rethrow;
     }
   }
 
@@ -129,7 +129,7 @@ class MultiColor with ChangeNotifier {
         throw (hasil.statusCode);
       }
     } catch (error) {
-      throw (error);
+      rethrow;
     }
   }
 }

@@ -16,7 +16,7 @@ class ProductPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Product Page'),
+        title: const Text('Product Page'),
         centerTitle: true,
       ),
       body: Center(
@@ -25,21 +25,21 @@ class ProductPage extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Get.toNamed(RouteNames.productPage + '/1?name=Jaket&ukuran=XL');
+                Get.toNamed('${RouteNames.productPage}/1?name=Jaket&ukuran=XL');
               },
-              child: Text('Product-1 '),
+              child: const Text('Product-1 '),
             ),
             ElevatedButton(
               onPressed: () {
-                Get.toNamed(RouteNames.productPage + '/2?name=Kemeja&ukuran=L');
+                Get.toNamed('${RouteNames.productPage}/2?name=Kemeja&ukuran=L');
               },
-              child: Text('Product-2 '),
+              child: const Text('Product-2 '),
             ),
             ElevatedButton(
               onPressed: () {
-                Get.toNamed(RouteNames.productPage + '/3?name=Baju&ukuran=L');
+                Get.toNamed('${RouteNames.productPage}/3?name=Baju&ukuran=L');
               },
-              child: Text('Product-3 '),
+              child: const Text('Product-3 '),
             ),
           ],
         ),

@@ -121,7 +121,7 @@ class HomeWidget extends StatelessWidget {
               child: Text(value),
             );
           }).toList(),
-          onChanged: (value) => debugPrint('Changed: ${value}'),
+          onChanged: (value) => debugPrint('Changed: $value'),
         ),
         const Text('DropdownButton')
       ],

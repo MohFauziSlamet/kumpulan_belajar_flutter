@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Counter Bloc'),
+        title: const Text('Counter Bloc'),
       ),
       body: Center(
         child: Column(
@@ -38,10 +38,10 @@ class _HomePageState extends State<HomePage> {
               initialData: bloc.counter,
               builder: (context, snapshot) => Text(
                 'Data saat ini : ${snapshot.data}',
-                style: TextStyle(fontSize: 25),
+                style: const TextStyle(fontSize: 25),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             // row button
@@ -52,13 +52,13 @@ class _HomePageState extends State<HomePage> {
                   onPressed: () {
                     bloc.sinkInputan.add('minus');
                   },
-                  icon: Icon(Icons.remove),
+                  icon: const Icon(Icons.remove),
                 ),
                 IconButton(
                   onPressed: () {
                     bloc.sinkInputan.add('add');
                   },
-                  icon: Icon(Icons.add),
+                  icon: const Icon(Icons.add),
                 ),
               ],
             )

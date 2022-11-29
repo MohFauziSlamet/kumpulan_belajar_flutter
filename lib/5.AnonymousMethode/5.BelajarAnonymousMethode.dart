@@ -48,13 +48,12 @@ class _MyAppState extends State<MyApp> {
                 style: const TextStyle(fontSize: 20),
               ),
               ElevatedButton(
-                child: const Text('Tekan Saya'),
                 onPressed: tekanSaya,
+                child: const Text('Tekan Saya'),
               ),
               ElevatedButton(
-                child: const Text('Kembali'),
-                //perubahan saat tombol ditekan
                 onPressed: tombolKembali,
+                child: const Text('Kembali'),
               ),
 
 //=========================================================================

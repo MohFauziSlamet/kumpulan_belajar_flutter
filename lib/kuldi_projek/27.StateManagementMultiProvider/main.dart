@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
         //routes untuk menavigasikan page
         routes: {
           ProductDetailScreen.routeName: (ctx) => ProductDetailScreen(),
-          CartScreen.routeName: (ctx) => CartScreen(),
+          CartScreen.routeName: (ctx) => const CartScreen(),
         },
       ),
     );

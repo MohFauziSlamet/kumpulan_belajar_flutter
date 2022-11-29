@@ -21,7 +21,7 @@ class Contoh5 extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('State Management GETX OBX'),
+          title: const Text('State Management GETX OBX'),
           centerTitle: true,
         ),
         body: Column(
@@ -30,10 +30,10 @@ class Contoh5 extends StatelessWidget {
             Obx(
               () => Text(
                 'Nama saya ${controller.orang.value.nama}',
-                style: TextStyle(fontSize: 30),
+                style: const TextStyle(fontSize: 30),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Row(
@@ -43,13 +43,13 @@ class Contoh5 extends StatelessWidget {
                   onPressed: () {
                     controller.changeUpperCase();
                   },
-                  child: Text('ToUpper'),
+                  child: const Text('ToUpper'),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     controller.changeLowerCase();
                   },
-                  child: Text('ToLower'),
+                  child: const Text('ToLower'),
                 ),
               ],
             )
@@ -72,7 +72,7 @@ class Contoh4 extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('State Management GETX OBX'),
+          title: const Text('State Management GETX OBX'),
           centerTitle: true,
         ),
         body: Column(
@@ -81,10 +81,10 @@ class Contoh4 extends StatelessWidget {
             Obx(
               () => Text(
                 'Nama saya ${orangCntrllr.orang.nama}',
-                style: TextStyle(fontSize: 30),
+                style: const TextStyle(fontSize: 30),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Row(
@@ -94,13 +94,13 @@ class Contoh4 extends StatelessWidget {
                   onPressed: () {
                     orangCntrllr.upper();
                   },
-                  child: Text('ToUpper'),
+                  child: const Text('ToUpper'),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     orangCntrllr.lower();
                   },
-                  child: Text('ToLower'),
+                  child: const Text('ToLower'),
                 ),
               ],
             )
@@ -121,7 +121,7 @@ class Contoh3 extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('State Management GETX OBX'),
+          title: const Text('State Management GETX OBX'),
           centerTitle: true,
         ),
         body: Column(
@@ -130,10 +130,10 @@ class Contoh3 extends StatelessWidget {
             Obx(
               () => Text(
                 'Nama saya ${orang.nama}',
-                style: TextStyle(fontSize: 30),
+                style: const TextStyle(fontSize: 30),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Row(
@@ -143,13 +143,13 @@ class Contoh3 extends StatelessWidget {
                   onPressed: () {
                     orang.nama.value = orang.nama.value.toUpperCase();
                   },
-                  child: Text('ToUpper'),
+                  child: const Text('ToUpper'),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     orang.nama.value = orang.nama.value.toLowerCase();
                   },
-                  child: Text('ToLower'),
+                  child: const Text('ToLower'),
                 ),
               ],
             )
@@ -170,7 +170,7 @@ class Contoh2 extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('State Management GETX OBX'),
+          title: const Text('State Management GETX OBX'),
           centerTitle: true,
         ),
         body: Column(
@@ -179,10 +179,10 @@ class Contoh2 extends StatelessWidget {
             Obx(
               () => Text(
                 'Nama saya ${personC.name.value}',
-                style: TextStyle(fontSize: 30),
+                style: const TextStyle(fontSize: 30),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Row(
@@ -192,13 +192,13 @@ class Contoh2 extends StatelessWidget {
                   onPressed: () {
                     personC.upper();
                   },
-                  child: Text('ToUpper'),
+                  child: const Text('ToUpper'),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     personC.lower();
                   },
-                  child: Text('ToLower'),
+                  child: const Text('ToLower'),
                 ),
               ],
             )
@@ -228,7 +228,7 @@ class Contoh1 extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('State Management GETX OBX'),
+          title: const Text('State Management GETX OBX'),
           centerTitle: true,
         ),
         body: Column(
@@ -237,10 +237,10 @@ class Contoh1 extends StatelessWidget {
             Obx(
               () => Text(
                 'Angka ${counter.value}',
-                style: TextStyle(fontSize: 30),
+                style: const TextStyle(fontSize: 30),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
@@ -250,13 +250,13 @@ class Contoh1 extends StatelessWidget {
                   onPressed: () {
                     mines();
                   },
-                  child: Text('Dikurangi'),
+                  child: const Text('Dikurangi'),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     add();
                   },
-                  child: Text('Ditambah'),
+                  child: const Text('Ditambah'),
                 ),
               ],
             )

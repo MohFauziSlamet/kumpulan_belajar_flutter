@@ -53,7 +53,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -76,7 +76,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -97,7 +97,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -120,7 +120,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -141,7 +141,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -164,7 +164,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -185,7 +185,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -208,7 +208,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -229,7 +229,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -252,7 +252,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -273,7 +273,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -296,7 +296,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -317,7 +317,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -340,7 +340,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -361,7 +361,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -384,7 +384,7 @@ class HomePageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );

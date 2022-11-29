@@ -1,4 +1,3 @@
-import 'package:belajar_flutter/kuldi_projek/28.Review/main.dart';
 import 'package:belajar_flutter/kuldi_projek/45.state_management_bloc%20_cubit/blocs/counter_bloc_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -27,7 +26,7 @@ class HomePageBlocProvider extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Counter BlocProvider'),
+        title: const Text('Counter BlocProvider'),
       ),
       body: Center(
           child: Column(
@@ -35,15 +34,15 @@ class HomePageBlocProvider extends StatelessWidget {
         children: [
           BlocBuilder<CounterBlocProvider, int>(builder: (context, state) {
             print(
-                'Ini adalah state : ${state} ... Ini adalah counter : ${bloc.counter}');
+                'Ini adalah state : $state ... Ini adalah counter : ${bloc.counter}');
             return Text(
               (state == bloc.counter)
                   ? 'Angka saat ini : $state'
                   : 'Angka saat ini : ${bloc.counter}',
-              style: TextStyle(fontSize: 25),
+              style: const TextStyle(fontSize: 25),
             );
           }),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Row(
@@ -53,13 +52,13 @@ class HomePageBlocProvider extends StatelessWidget {
                 onPressed: () {
                   bloc.add('minus');
                 },
-                icon: Icon(Icons.remove),
+                icon: const Icon(Icons.remove),
               ),
               IconButton(
                 onPressed: () {
                   bloc.add('add');
                 },
-                icon: Icon(Icons.add),
+                icon: const Icon(Icons.add),
               ),
             ],
           )

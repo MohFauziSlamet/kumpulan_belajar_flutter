@@ -10,14 +10,14 @@ class HomePage extends StatelessWidget {
     final myC = Get.put(MyController());
     return Scaffold(
       appBar: AppBar(
-        title: Text("Latihan Worker"),
+        title: const Text("Latihan Worker"),
         centerTitle: true,
         actions: [
           IconButton(
             onPressed: () {
               myC.reset();
             },
-            icon: Icon(Icons.refresh),
+            icon: const Icon(Icons.refresh),
           ),
         ],
       ),
@@ -28,12 +28,12 @@ class HomePage extends StatelessWidget {
           children: [
             Obx(() => Text(
                   'Terjadi perubahaan : ${myC.count} X',
-                  style: TextStyle(fontSize: 25),
+                  style: const TextStyle(fontSize: 25),
                 )),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               onChanged: (value) => myC.change(),
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: OutlineInputBorder(),
               ),
             )

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -12,29 +12,29 @@ class MyApp extends StatelessWidget {
       Container(
         // height: 300,
         width: 300,
-        decoration: BoxDecoration(color: Colors.red),
+        decoration: const BoxDecoration(color: Colors.red),
       ),
       Container(
         height: 300,
         width: 300,
-        decoration: BoxDecoration(color: Colors.green),
+        decoration: const BoxDecoration(color: Colors.green),
       ),
       Container(
         height: 300,
         width: 300,
-        decoration: BoxDecoration(color: Colors.blue),
+        decoration: const BoxDecoration(color: Colors.blue),
       ),
       Container(
         height: 300,
         width: 300,
-        decoration: BoxDecoration(color: Colors.amber),
+        decoration: const BoxDecoration(color: Colors.amber),
       ),
     ];
 
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Listview"),
+          title: const Text("Latihan Listview"),
         ),
         body: ListView(
           //listview secara default kearah vertical. atas bawah

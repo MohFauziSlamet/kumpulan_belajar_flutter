@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomePage(),
     );
   }
@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
       }
     } catch (e) {
       print(e);
-      throw (e);
+      rethrow;
     }
   }
 
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("FuturenBuilder"),
+        title: const Text("FuturenBuilder"),
       ),
       //
       body: FutureBuilder(
@@ -55,13 +55,13 @@ class HomePage extends StatelessWidget {
             return Center(
               child: Text(
                 snapshot.error.toString(),
-                style: TextStyle(fontSize: 35),
+                style: const TextStyle(fontSize: 35),
               ),
             );
           }
 
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(
+            return const Center(
               child: CircularProgressIndicator(),
             );
           } else {
@@ -71,7 +71,7 @@ class HomePage extends StatelessWidget {
             return Center(
               child: Text(
                 "${data['first_name']}   ${data['last_name']}",
-                style: TextStyle(fontSize: 35),
+                style: const TextStyle(fontSize: 35),
               ),
             );
           }
@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
         onPressed: () {
           ambilData();
         },
-        child: Icon(Icons.get_app),
+        child: const Icon(Icons.get_app),
       ),
     );
   }

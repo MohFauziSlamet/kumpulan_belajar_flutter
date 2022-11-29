@@ -39,7 +39,7 @@ class CenterCircle extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border.all(width: 5, color: Colors.amber),
                     borderRadius: BorderRadius.circular(100),
-                    image: DecorationImage(
+                    image: const DecorationImage(
                       image: AssetImage('assets/mauludy.jpg'),
                       fit: BoxFit.fill,
                     ),

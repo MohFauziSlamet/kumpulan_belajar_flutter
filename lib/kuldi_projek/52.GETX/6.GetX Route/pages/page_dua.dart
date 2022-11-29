@@ -9,7 +9,7 @@ class PageDua extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page Dua'),
+        title: const Text('Page Dua'),
         centerTitle: true,
       ),
       body: Center(
@@ -20,7 +20,7 @@ class PageDua extends StatelessWidget {
               onPressed: () {
                 Get.back();
               },
-              child: Text('<< BACK TO PAGE SATU'),
+              child: const Text('<< BACK TO PAGE SATU'),
             ),
             ElevatedButton(
               onPressed: () {
@@ -28,7 +28,7 @@ class PageDua extends StatelessWidget {
                   RouteNames.page_3,
                 );
               },
-              child: Text('GO TO PAGE TIGA >>'),
+              child: const Text('GO TO PAGE TIGA >>'),
             ),
           ],
         ),

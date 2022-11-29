@@ -56,6 +56,14 @@ class MainPage extends StatelessWidget {
             left: -getBigDiameter(context) / 4,
             top: -getBigDiameter(context) / 3,
             child: Container(
+              width: getBigDiameter(context),
+              height: getBigDiameter(context),
+              decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: LinearGradient(
+                      colors: [Color(0xFFB226B2), Color(0xFFFF4891)],
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter)),
               child: const Center(
                 child: Text(
                   "dribblee",
@@ -65,14 +73,6 @@ class MainPage extends StatelessWidget {
                       fontFamily: "Pacifico"),
                 ),
               ),
-              width: getBigDiameter(context),
-              height: getBigDiameter(context),
-              decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  gradient: LinearGradient(
-                      colors: [Color(0xFFB226B2), Color(0xFFFF4891)],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter)),
             ),
           ),
 
@@ -165,6 +165,17 @@ class MainPage extends StatelessWidget {
                         width: MediaQuery.of(context).size.width * 0.5,
                         height: 35,
                         child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            gradient: const LinearGradient(
+                              colors: [
+                                Color(0xFFB226B2),
+                                Color(0xFFFF4891),
+                              ],
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                            ),
+                          ),
                           child: Material(
                             borderRadius: BorderRadius.circular(20),
                             color: Colors.transparent,
@@ -181,17 +192,6 @@ class MainPage extends StatelessWidget {
                                       fontWeight: FontWeight.w700),
                                 ),
                               ),
-                            ),
-                          ),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            gradient: const LinearGradient(
-                              colors: [
-                                Color(0xFFB226B2),
-                                Color(0xFFFF4891),
-                              ],
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
                             ),
                           ),
                         ),

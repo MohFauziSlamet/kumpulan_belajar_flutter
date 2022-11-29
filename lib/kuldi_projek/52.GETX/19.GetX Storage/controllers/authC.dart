@@ -8,7 +8,7 @@ class AuthC extends GetxController {
   RxBool isAuth = false.obs;
 
   // kita buat contoh data fake
-  Map<String, String> _dataUser = {
+  final Map<String, String> _dataUser = {
     'email': 'admin@gmail.com',
     'password': 'sayaadmin',
   };

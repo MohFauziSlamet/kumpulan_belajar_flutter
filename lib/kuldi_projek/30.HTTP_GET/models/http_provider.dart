@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -12,7 +11,7 @@ class HttpProvider with ChangeNotifier {
   //
   void connectApi(String id) async {
     // kita buat dulu uri url dan kita pasre ke string
-    Uri url = Uri.parse("https://reqres.in/api/users/ " + id);
+    Uri url = Uri.parse("https://reqres.in/api/users/ $id");
 
     // kita meminta data dengan method get
     // karena data belum bisa didapat

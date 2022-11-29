@@ -49,6 +49,12 @@ class MyApp extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: ElevatedButton(
                     onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(double.infinity, 55),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        primary: Colors.amber),
                     child: const Text(
                       'Reset Password',
                       style: TextStyle(
@@ -56,12 +62,6 @@ class MyApp extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           color: Colors.black54),
                     ),
-                    style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(double.infinity, 55),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        primary: Colors.amber),
                   ),
                 )
               ],

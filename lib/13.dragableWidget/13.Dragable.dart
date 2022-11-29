@@ -34,15 +34,6 @@ class _MyAppState extends State<MyApp> {
                   //lingkaran 1
                   Draggable<Color>(
                     data: color1,
-                    child: SizedBox(
-                      width: 50,
-                      height: 50,
-                      child: Material(
-                        color: color1,
-                        shape: const StadiumBorder(),
-                        elevation: 3,
-                      ),
-                    ),
                     //childWhenDragging : widget yang akan digambar ketika kita men.drag widget tersebut
                     // widget ini akan mengisi posisi awal dari widget tadi , menggantikannya
                     childWhenDragging: const SizedBox(
@@ -63,20 +54,20 @@ class _MyAppState extends State<MyApp> {
                         elevation: 0,
                       ),
                     ),
+                    child: SizedBox(
+                      width: 50,
+                      height: 50,
+                      child: Material(
+                        color: color1,
+                        shape: const StadiumBorder(),
+                        elevation: 3,
+                      ),
+                    ),
                   ),
 
                   //lingkaran 2
                   Draggable<Color>(
                     data: color2,
-                    child: SizedBox(
-                      width: 50,
-                      height: 50,
-                      child: Material(
-                        color: color2,
-                        shape: const StadiumBorder(),
-                        elevation: 3,
-                      ),
-                    ),
                     childWhenDragging: const SizedBox(
                       width: 50,
                       height: 50,
@@ -94,6 +85,15 @@ class _MyAppState extends State<MyApp> {
                         color: color2.withOpacity(0.7),
                         shape: const StadiumBorder(),
                         elevation: 0,
+                      ),
+                    ),
+                    child: SizedBox(
+                      width: 50,
+                      height: 50,
+                      child: Material(
+                        color: color2,
+                        shape: const StadiumBorder(),
+                        elevation: 3,
                       ),
                     ),
                   )

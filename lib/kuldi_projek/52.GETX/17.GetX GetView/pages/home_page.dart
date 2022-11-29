@@ -17,7 +17,7 @@ class HomePage extends GetView<MyC> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
         centerTitle: true,
       ),
       body: Column(
@@ -26,10 +26,10 @@ class HomePage extends GetView<MyC> {
           Obx(
             () => Text(
               '${controller.nilai}',
-              style: TextStyle(fontSize: 30),
+              style: const TextStyle(fontSize: 30),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -41,13 +41,13 @@ class HomePage extends GetView<MyC> {
                     print("tidak ada apa apa");
                   }
                 },
-                child: Icon(Icons.remove),
+                child: const Icon(Icons.remove),
               ),
               ElevatedButton(
                 onPressed: () {
                   controller.add();
                 },
-                child: Icon(Icons.add),
+                child: const Icon(Icons.add),
               )
             ],
           )

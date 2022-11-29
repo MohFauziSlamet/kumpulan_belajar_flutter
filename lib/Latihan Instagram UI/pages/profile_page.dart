@@ -26,7 +26,7 @@ class ProfilePage extends StatelessWidget {
         // name profile
         title: Row(
           children: [
-            Text(
+            const Text(
               'Barochatul Mauludy',
               style: TextStyle(
                 color: Colors.black,
@@ -34,7 +34,7 @@ class ProfilePage extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.arrow_drop_down_sharp,
                 color: Colors.black,
               ),
@@ -45,14 +45,14 @@ class ProfilePage extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.add_box_outlined,
               color: Colors.black,
             ),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.menu,
               color: Colors.black,
             ),
@@ -66,7 +66,7 @@ class ProfilePage extends StatelessWidget {
             child: Row(
               children: [
                 // membuat foto profile
-                ProfilePicture(),
+                const ProfilePicture(),
 
                 // informasi post , followers , following
                 Expanded(
@@ -93,11 +93,11 @@ class ProfilePage extends StatelessWidget {
           ),
 
           // jarak
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
 
           // username
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
             child: Text(
               'Barochatul Mauludy',
               style: TextStyle(
@@ -108,13 +108,13 @@ class ProfilePage extends StatelessWidget {
           ),
 
           // jarak
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
 
           // deskripsi
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: RichText(
-              text: TextSpan(
+              text: const TextSpan(
                 text:
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 style: TextStyle(
@@ -132,11 +132,11 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           // jarak
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
 
           // deskripsi
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
             child: Text(
               'Link goes to',
               style: TextStyle(
@@ -145,31 +145,31 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           // jarak
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
 
           // edit profile
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: ElevatedButton(
               onPressed: () {},
-              child: Text(
-                'Edit Profile',
-                style: TextStyle(color: Colors.black),
-              ),
               style: ElevatedButton.styleFrom(
                 primary: Colors.white,
                 elevation: 0,
-                shape: RoundedRectangleBorder(
+                shape: const RoundedRectangleBorder(
                   side: BorderSide(
                     color: Color(0xff000000),
                     width: 0.5,
                   ),
                 ),
               ),
+              child: const Text(
+                'Edit Profile',
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ),
           // jarak
-          SizedBox(height: 7),
+          const SizedBox(height: 7),
 
           // Status
           Padding(
@@ -223,9 +223,9 @@ class ProfilePage extends StatelessWidget {
           ),
 
           // tab
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Row(
-            children: [
+            children: const [
               TabItem(
                 icon: Icons.grid_on_outlined,
                 inActive: true,
@@ -238,17 +238,17 @@ class ProfilePage extends StatelessWidget {
           ),
 
           //
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           GridView.builder(
             // shrinkWrap dan physics :
             // kita memakiai scroll dari parent
             // karena GridView didalam ListView, yang sama sama memilik scroll able
             // sehingga kita memakai scroll dari parent (listview)
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: 15,
 
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
               mainAxisSpacing: 5,
               crossAxisSpacing: 5,
@@ -271,7 +271,7 @@ class ProfilePage extends StatelessWidget {
         showUnselectedLabels: false,
 
         currentIndex: 4,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',

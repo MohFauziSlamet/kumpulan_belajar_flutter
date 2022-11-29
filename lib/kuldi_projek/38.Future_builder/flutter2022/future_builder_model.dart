@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 void main(List<String> args) {
-  runApp(FutureBuilderApp());
+  runApp(const FutureBuilderApp());
 }
 
 class FutureBuilderApp extends StatelessWidget {
@@ -13,7 +13,7 @@ class FutureBuilderApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
@@ -43,9 +43,9 @@ class _HomePageState extends State<HomePage> {
       List data = (json.decode(response.body) as Map<String, dynamic>)['data'];
 
       //  memasukan data ke getAllUser
-      data.forEach((element) {
+      for (var element in data) {
         getAllUser.add(userModelFromJson(element));
-      });
+      }
       print(getAllUser);
     } catch (e) {
       print('Telah tejadi kesalahan');
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Future Builder App'),
+        title: const Text('Future Builder App'),
         centerTitle: true,
       ),
       body: FutureBuilder(
@@ -65,15 +65,15 @@ class _HomePageState extends State<HomePage> {
         builder: (context, snapshot) {
           // snapshot untuk mengecek status proses pengambilan data
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(
+            return const Center(
               child: Text(
                 'Loading....',
                 style: TextStyle(fontSize: 24),
               ),
             );
           } else {
-            if (getAllUser.length == 0) {
-              return Center(
+            if (getAllUser.isEmpty) {
+              return const Center(
                 child: Text(
                   'Tidak ada data',
                   style: TextStyle(fontSize: 24),
@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                             NetworkImage(getAllUser[index].avatar)),
                     title: Text(
                         '${getAllUser[index].firstName} ${getAllUser[index].lastName}'),
-                    subtitle: Text('${getAllUser[index].email}'),
+                    subtitle: Text(getAllUser[index].email),
                   );
                 },
               );
@@ -112,7 +112,7 @@ class WithKlikButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: ElevatedButton(
-        child: Text('Get Data Disini'),
+        child: const Text('Get Data Disini'),
         onPressed: () async {
           var response = await http.get(
             Uri.parse('https://reqres.in/api/users'),
@@ -124,12 +124,10 @@ class WithKlikButton extends StatelessWidget {
           List data =
               (json.decode(response.body) as Map<String, dynamic>)['data'];
 
-          data.forEach(
-            (element) {
+          for (var element in data) {
               Map<String, dynamic> user = element;
               print(user['email']);
-            },
-          );
+            }
         },
       ),
     );

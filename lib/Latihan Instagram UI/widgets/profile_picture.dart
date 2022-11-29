@@ -14,7 +14,7 @@ class ProfilePicture extends StatelessWidget {
           height: 120,
           width: 120,
           decoration: BoxDecoration(
-            gradient: LinearGradient(
+            gradient: const LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
@@ -30,7 +30,7 @@ class ProfilePicture extends StatelessWidget {
           width: 110,
           decoration: BoxDecoration(
             color: Colors.grey[300],
-            image: DecorationImage(
+            image: const DecorationImage(
               image: AssetImage('assets/mauludy.jpg'),
               fit: BoxFit.fill,
             ),

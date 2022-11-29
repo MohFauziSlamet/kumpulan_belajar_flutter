@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 import 'package:belajar_flutter/3.Container dan Mapping list map/widget/kotak_warna.dart';
 
@@ -36,7 +35,7 @@ class ListApp extends StatelessWidget {
         // body: GridviewCount(datagridview: database), // memanggil GridviewCount
         body: GridView.custom(
             gridDelegate:
-                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+                const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
             childrenDelegate: SliverChildListDelegate.fixed(
               database
                   .map(

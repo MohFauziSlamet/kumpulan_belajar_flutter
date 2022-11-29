@@ -8,7 +8,7 @@ class AppPages {
   static final routePages = [
     GetPage(
       name: RouteNames.homePageRoute,
-      page: () => HomePage(),
+      page: () => const HomePage(),
     ),
     GetPage(
       name: RouteNames.countPageRoute,

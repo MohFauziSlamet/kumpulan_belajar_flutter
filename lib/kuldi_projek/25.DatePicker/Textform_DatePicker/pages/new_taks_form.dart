@@ -10,13 +10,13 @@ class NewTaskForm extends StatefulWidget {
 
 class _NewTaskFormState extends State<NewTaskForm> {
   ///
-  Task task = new Task(date: DateTime.now());
+  Task task = Task(date: DateTime.now());
 
   ///
   final _formKey = GlobalKey<FormState>();
 
   ///
-  TextEditingController _dateController = TextEditingController();
+  final TextEditingController _dateController = TextEditingController();
   DateTime selectedDate = DateTime.now();
 
   ///
@@ -56,7 +56,7 @@ class _NewTaskFormState extends State<NewTaskForm> {
                 child: AbsorbPointer(
                   child: TextFormField(
                     onSaved: (value) => task.name = value!,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Date',
                       icon: Icon(Icons.account_circle),
                     ),
@@ -70,18 +70,19 @@ class _NewTaskFormState extends State<NewTaskForm> {
                 },
                 controller: _dateController,
                 keyboardType: TextInputType.datetime,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "Tak Name",
                   icon: Icon(Icons.calendar_today),
                 ),
                 validator: (value) {
-                  if (value!.isEmpty)
+                  if (value!.isEmpty) {
                     return "Please enter a date for your task";
+                  }
                   return null;
                 },
               ),
               ElevatedButton(
-                child: Text("Submit"),
+                child: const Text("Submit"),
                 // style: ButtonStyle(
 
                 // textColor: Colors.white,

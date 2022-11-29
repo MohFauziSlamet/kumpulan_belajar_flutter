@@ -21,11 +21,11 @@ class GridviewAplikasi extends StatelessWidget {
       body: GridView.builder(
         itemCount: 60,
         gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
         itemBuilder: (context, index) {
           if (index % 2 == 0) {
             return Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               width: 150,
               height: 150,
               color: Colors.blue,
@@ -38,7 +38,7 @@ class GridviewAplikasi extends StatelessWidget {
             );
           } else {
             return Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               width: 150,
               height: 150,
               color: Colors.amber,

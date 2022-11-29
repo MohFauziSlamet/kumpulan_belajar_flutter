@@ -9,7 +9,7 @@ class PageTiga extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page Tiga'),
+        title: const Text('Page Tiga'),
         centerTitle: true,
       ),
       body: Center(
@@ -20,13 +20,13 @@ class PageTiga extends StatelessWidget {
               onPressed: () {
                 Get.back();
               },
-              child: Text('<< BACK TO PAGE DUA'),
+              child: const Text('<< BACK TO PAGE DUA'),
             ),
             ElevatedButton(
               onPressed: () {
                 Get.toNamed(RouteNames.page_4);
               },
-              child: Text('GO TO PAGE EMPAT >>'),
+              child: const Text('GO TO PAGE EMPAT >>'),
             ),
           ],
         ),

@@ -42,11 +42,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       //
       appBar: AppBar(
-        title: Text("Home Page"),
+        title: const Text("Home Page"),
         actions: [
           // button untuk me routing ke halaman AddColorPage
           IconButton(
-            icon: Icon(Icons.add),
+            icon: const Icon(Icons.add),
             onPressed: () =>
                 Navigator.pushNamed(context, AddColorPage.routeName),
           ),
@@ -56,8 +56,8 @@ class _HomePageState extends State<HomePage> {
       // untuk tampilan awal body ,kita cek dulu jumlah data pada colorsClass.
       // jika 0 , akan tampil no data.
       // jika ada data , akan tampil ListView dari data tsb
-      body: colorsClass.colors.length == 0
-          ? Center(
+      body: colorsClass.colors.isEmpty
+          ? const Center(
               child: Text(
                 "No Data",
                 style: TextStyle(
@@ -88,12 +88,12 @@ class _HomePageState extends State<HomePage> {
                       colorsClass.selectAll(allStatus);
                     });
                   },
-                  title: Text("Select all colors"),
+                  title: const Text("Select all colors"),
                   // penempatan posisi checkboxnya
                   controlAffinity: ListTileControlAffinity.leading,
-                  contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 20),
                 ),
-                Divider(),
+                const Divider(),
 
                 // menggunakan spread colecction , untuk memasukan list colors
                 // kedalam children widget
@@ -120,12 +120,12 @@ class _HomePageState extends State<HomePage> {
                             });
                           },
 
-                          title: Text("${e.title}"),
+                          title: Text(e.title),
                           controlAffinity: ListTileControlAffinity.leading,
-                          contentPadding: EdgeInsets.symmetric(horizontal: 40),
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 40),
                           // posisi secondary == trailing pada listile
                           secondary: IconButton(
-                            icon: Icon(Icons.delete),
+                            icon: const Icon(Icons.delete),
                             onPressed: () {
                               colorsClass.deleteColor(e.id);
                             },

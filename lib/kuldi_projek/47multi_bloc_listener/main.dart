@@ -5,11 +5,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'pages/multi_bloc_listener.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
         child: BlocBuilder<ThemeMultiBloc, bool>(
           builder: (context, state) => MaterialApp(
             theme: (state == isDark) ? light : dark,
-            home: HomeMultiBlocListener(),
+            home: const HomeMultiBlocListener(),
           ),
         ),
       ),

@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('State Management GETX OBX'),
+        title: const Text('State Management GETX OBX'),
         centerTitle: true,
       ),
       body: Column(
@@ -42,13 +42,13 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   counterControl.mines();
                 },
-                child: Text('Dikurangi'),
+                child: const Text('Dikurangi'),
               ),
               ElevatedButton(
                 onPressed: () {
                   counterControl.add();
                 },
-                child: Text('Ditambah'),
+                child: const Text('Ditambah'),
               ),
             ],
           )
@@ -58,11 +58,11 @@ class HomePage extends StatelessWidget {
         onPressed: () {
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (context) => OtherPage(),
+              builder: (context) => const OtherPage(),
             ),
           );
         },
-        child: Icon(Icons.arrow_forward),
+        child: const Icon(Icons.arrow_forward),
       ),
     );
   }
@@ -79,7 +79,7 @@ class CountWidget extends StatelessWidget {
       init: CountController(),
       builder: (cntlr) => Text(
         'Angak ${c.counter}',
-        style: TextStyle(fontSize: 30),
+        style: const TextStyle(fontSize: 30),
       ),
     );
   }

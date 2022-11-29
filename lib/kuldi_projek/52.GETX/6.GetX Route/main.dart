@@ -9,7 +9,7 @@ import './routes/page_route.dart';
 // Get.offAll() : sama dengan Navigator.of(context).pushReplacementAndRemoweUntil()
 // Get.back() : sama dengan Navigator.of(context).pop()
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        home: PageSatu(),
+        home: const PageSatu(),
         getPages: AppPageRoute.pages);
   }
 }

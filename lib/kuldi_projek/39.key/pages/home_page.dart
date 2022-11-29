@@ -14,17 +14,17 @@ class HomePage extends StatelessWidget {
     var allProducts = products.allProducts;
     return Scaffold(
       appBar: AppBar(
-        title: Text("All Products"),
+        title: const Text("All Products"),
         actions: [
           IconButton(
-            icon: Icon(Icons.add),
+            icon: const Icon(Icons.add),
             onPressed: () =>
                 Navigator.pushNamed(context, AddProductPage.routeName),
           ),
         ],
       ),
-      body: (allProducts.length == 0)
-          ? Center(
+      body: (allProducts.isEmpty)
+          ? const Center(
               child: Text(
                 "No Data",
                 style: TextStyle(

@@ -10,13 +10,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
         actions: [
           IconButton(
               onPressed: () {
                 auth.logout(login.rememberMe);
               },
-              icon: Icon(Icons.logout))
+              icon: const Icon(Icons.logout))
         ],
         centerTitle: true,
       ),

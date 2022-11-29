@@ -1,11 +1,9 @@
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 
 void main(List<String> args) {
-  runApp(CustomTabbar());
+  runApp(const CustomTabbar());
 }
 
 class CustomTabbar extends StatelessWidget {
@@ -41,14 +39,14 @@ class CustomTabbar extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.lightBlue[100],
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             "Custom Tabbar",
           ),
           centerTitle: true,
           backgroundColor: Colors.lightBlueAccent,
         ),
         body: Container(
-          margin: EdgeInsets.all(5),
+          margin: const EdgeInsets.all(5),
           height: double.infinity,
           width: double.infinity,
           child: Column(
@@ -58,7 +56,7 @@ class CustomTabbar extends StatelessWidget {
                 width: double.infinity,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  physics: BouncingScrollPhysics(),
+                  physics: const BouncingScrollPhysics(),
                   itemCount: items.length,
                   itemBuilder: (context, index) {
                     return Column(
@@ -68,8 +66,8 @@ class CustomTabbar extends StatelessWidget {
                                 current.value = index;
                               },
                               child: AnimatedContainer(
-                                duration: Duration(milliseconds: 300),
-                                margin: EdgeInsets.all(5),
+                                duration: const Duration(milliseconds: 300),
+                                margin: const EdgeInsets.all(5),
                                 width: 80,
                                 height: 45,
                                 decoration: BoxDecoration(

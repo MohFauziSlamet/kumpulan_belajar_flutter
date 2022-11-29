@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -326,11 +326,11 @@ class ContainerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       width: 100,
       height: 100,
       color: warna,
-      child: Center(
+      child: const Center(
         child: Text('Kotak 3'),
       ),
     );
@@ -363,11 +363,11 @@ class RowColumn extends StatelessWidget {
                 // )
                 ),
             Container(
+              color: Colors.amber,
               child: const Text(
                 'text 5',
                 // style: TextStyle(fontSize: 16),
               ),
-              color: Colors.amber,
             ),
             Container(color: Colors.blue[100], child: const Text('text 6')
                 // FlutterLogo(

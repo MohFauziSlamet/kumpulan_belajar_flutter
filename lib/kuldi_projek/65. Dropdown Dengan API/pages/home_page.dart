@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: ListView(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         children: [
           // dropdown_search provinsi
           DropdownSearch<Province>(
@@ -61,19 +61,19 @@ class HomePage extends StatelessWidget {
               // kita buat variabel list kosong , sebagai penampung
               List<Province> allModelProvince = [];
 
-              allProvince.forEach((element) {
+              for (var element in allProvince) {
                 allModelProvince.add(
                   Province(
                     id: element['id'],
                     name: element['name'],
                   ),
                 );
-              });
+              }
 
               return allModelProvince;
             },
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
 
           DropdownSearch<City>(
             mode: Mode.DIALOG,
@@ -114,7 +114,7 @@ class HomePage extends StatelessWidget {
               // kita buat variabel list kosong , sebagai penampung
               List<City> allModelCity = [];
 
-              allCity.forEach((element) {
+              for (var element in allCity) {
                 allModelCity.add(
                   City(
                     id: element['id'],
@@ -122,7 +122,7 @@ class HomePage extends StatelessWidget {
                     name: element['name'],
                   ),
                 );
-              });
+              }
 
               return allModelCity;
             },

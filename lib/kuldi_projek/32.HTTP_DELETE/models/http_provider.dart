@@ -14,7 +14,7 @@ class HttpProvider with ChangeNotifier {
   late Uri url;
 
   void connectAPI(String id, BuildContext context) async {
-    url = Uri.parse("https://reqres.in/api/users/" + id);
+    url = Uri.parse("https://reqres.in/api/users/$id");
 
     var hasilResponse = await http.get(url);
 
@@ -50,7 +50,7 @@ class HttpProvider with ChangeNotifier {
 
       handlingStatusCode(context,
           message:
-              "Data berhasil dihapus" + (hasilResponse.statusCode).toString());
+              "Data berhasil dihapus${hasilResponse.statusCode}");
     }
   }
 
@@ -60,7 +60,7 @@ class HttpProvider with ChangeNotifier {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(message),
-        duration: Duration(milliseconds: 700),
+        duration: const Duration(milliseconds: 700),
       ),
     );
   }

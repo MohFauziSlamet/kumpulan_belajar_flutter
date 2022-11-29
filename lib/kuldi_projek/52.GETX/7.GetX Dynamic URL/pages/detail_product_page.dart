@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../routes/route_name.dart';
 
 class DetailProductPage extends StatelessWidget {
   const DetailProductPage({Key? key}) : super(key: key);

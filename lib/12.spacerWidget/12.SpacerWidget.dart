@@ -109,7 +109,7 @@ class MyApp extends StatelessWidget {
                         width: 100,
                         height: 150,
                         child: const Image(
-                          image: const AssetImage('assets/mauludy.jpg'),
+                          image: AssetImage('assets/mauludy.jpg'),
                         ),
                       ),
                       const Spacer(

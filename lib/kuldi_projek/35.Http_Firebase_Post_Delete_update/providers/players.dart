@@ -130,7 +130,7 @@ class AllMahasiswa with ChangeNotifier {
         throw (response.statusCode);
       }
     } catch (error) {
-      throw (error);
+      rethrow;
     }
   }
 
@@ -195,7 +195,7 @@ class AllMahasiswa with ChangeNotifier {
         notifyListeners();
       }
     } catch (error) {
-      throw (error);
+      rethrow;
     }
   }
 
@@ -222,9 +222,7 @@ class AllMahasiswa with ChangeNotifier {
         throw (response.statusCode);
       }
     } catch (error) {
-      if (error != null) {
-        throw (error);
-      }
+      rethrow;
     }
   }
 

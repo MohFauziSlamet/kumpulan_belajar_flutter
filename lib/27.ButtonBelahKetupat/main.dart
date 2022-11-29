@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'colorfull_button.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
+            children: const [
               ColorfullButton(Colors.amber, Colors.blue, Icons.adb),
               ColorfullButton(Colors.pink, Colors.green, Icons.contact_phone),
               ColorfullButton(Colors.purple, Colors.red, Icons.settings),

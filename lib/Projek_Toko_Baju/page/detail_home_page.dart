@@ -1,4 +1,3 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 
@@ -22,7 +21,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
             children: [
               // profil
               Container(
-                margin: EdgeInsets.symmetric(vertical: 20),
+                margin: const EdgeInsets.symmetric(vertical: 20),
                 height: 100,
                 width: MediaQuery.of(context).size.width * 0.2 * 0.8,
                 decoration: BoxDecoration(
@@ -33,7 +32,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Container(
@@ -44,7 +43,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
                           shape: BoxShape.circle,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Expanded(
@@ -53,7 +52,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              child: Text(
+                              child: const Text(
                                 'Halo \nMoh Fauzi Slamet',
                                 style: TextStyle(
                                   fontSize: 20,
@@ -74,7 +73,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(20, 13, 20, 0),
+                  margin: const EdgeInsets.fromLTRB(20, 13, 20, 0),
                   height: 40,
                   width: MediaQuery.of(context).size.width * 0.2 * 0.8,
                   decoration: BoxDecoration(
@@ -86,7 +85,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(20, 13, 20, 0),
+                  margin: const EdgeInsets.fromLTRB(20, 13, 20, 0),
                   height: 40,
                   width: MediaQuery.of(context).size.width * 0.2 * 0.8,
                   decoration: BoxDecoration(
@@ -98,7 +97,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(20, 13, 20, 0),
+                  margin: const EdgeInsets.fromLTRB(20, 13, 20, 0),
                   height: 40,
                   width: MediaQuery.of(context).size.width * 0.2 * 0.8,
                   decoration: BoxDecoration(
@@ -110,7 +109,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(20, 13, 20, 0),
+                  margin: const EdgeInsets.fromLTRB(20, 13, 20, 0),
                   height: 40,
                   width: MediaQuery.of(context).size.width * 0.2 * 0.8,
                   decoration: BoxDecoration(
@@ -122,7 +121,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(20, 13, 20, 0),
+                  margin: const EdgeInsets.fromLTRB(20, 13, 20, 0),
                   height: 40,
                   width: MediaQuery.of(context).size.width * 0.2 * 0.8,
                   decoration: BoxDecoration(
@@ -134,7 +133,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(20, 13, 20, 0),
+                  margin: const EdgeInsets.fromLTRB(20, 13, 20, 0),
                   height: 40,
                   width: MediaQuery.of(context).size.width * 0.2 * 0.8,
                   decoration: BoxDecoration(
@@ -146,7 +145,7 @@ class _DetailHomePageState extends State<DetailHomePage> {
               GestureDetector(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(20, 13, 20, 0),
+                  margin: const EdgeInsets.fromLTRB(20, 13, 20, 0),
                   height: 40,
                   width: MediaQuery.of(context).size.width * 0.2 * 0.8,
                   decoration: BoxDecoration(

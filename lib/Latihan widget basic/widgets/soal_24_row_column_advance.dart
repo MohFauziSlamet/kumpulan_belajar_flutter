@@ -21,21 +21,21 @@ class RowColumnAdvance extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(top: 20, right: 20),
+            padding: const EdgeInsets.only(top: 20, right: 20),
             height: 140,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 if (index % 2 == 0) {
                   return Container(
-                    margin: EdgeInsets.all(20),
+                    margin: const EdgeInsets.all(20),
                     height: 120,
                     width: 100,
                     color: Colors.blue,
                   );
                 } else {
                   return Container(
-                    margin: EdgeInsets.all(20),
+                    margin: const EdgeInsets.all(20),
                     height: 120,
                     width: 100,
                     color: Colors.amber,

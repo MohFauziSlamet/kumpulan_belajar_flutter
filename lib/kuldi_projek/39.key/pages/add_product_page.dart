@@ -23,10 +23,10 @@ class _AddProductPageState extends State<AddProductPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Add Product"),
+        title: const Text("Add Product"),
         actions: [
           IconButton(
-            icon: Icon(Icons.save),
+            icon: const Icon(Icons.save),
             onPressed: () {
               products.addProduct(titleController.text, date!);
               Navigator.pop(context);
@@ -50,7 +50,7 @@ class _AddProductPageState extends State<AddProductPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 5,
@@ -62,7 +62,7 @@ class _AddProductPageState extends State<AddProductPage> {
                       (date == null)
                           ? "No date chosen..."
                           : DateFormat().add_yMMMMd().format(date!),
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
@@ -82,7 +82,7 @@ class _AddProductPageState extends State<AddProductPage> {
                           },
                         );
                       },
-                      child: Text(
+                      child: const Text(
                         "Select Date",
                         style: TextStyle(
                           fontSize: 16,

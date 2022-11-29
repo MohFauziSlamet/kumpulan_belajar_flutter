@@ -1,4 +1,3 @@
-import 'package:belajar_flutter/Latihan%20widget%20basic/widgets/soal_23_center_circle%20_helo.dart';
 import 'package:flutter/material.dart';
 // import 'widgets/soal_hello_world_1.dart'; // soal 1
 // import 'widgets/soal_hello_world_2.dart';  // soal 2

@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
         centerTitle: true,
       ),
       body: Center(
@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
             // dengan menggunakanan nama sebagai route nya
             Get.toNamed(RouteNames.countPageRoute);
           },
-          child: Text('Next >>'),
+          child: const Text('Next >>'),
         ),
       ),
     );

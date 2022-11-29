@@ -5,12 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeScreen extends GetView<HomeController> {
+  @override
   final controller = Get.put(HomeController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Product'),
+        title: const Text('Home Product'),
         centerTitle: true,
       ),
       body: Center(
@@ -20,7 +21,7 @@ class HomeScreen extends GetView<HomeController> {
             height: 70,
             width: 200,
             color: Colors.blue,
-            child: Center(
+            child: const Center(
               child: Text(
                 "Hello",
                 style: TextStyle(fontSize: 30),

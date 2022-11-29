@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 // jika scrollDirection.Axis.vertical(atas bawah) , maka widget akan di buat 3 kesamping
 // jika scrollDirection.Axis.horizontal(kiri kanan) , maka widget akan di buat 3 atas bawah
 void main(List<String> args) {
-  runApp(GridviewApp());
+  runApp(const GridviewApp());
 }
 
 class GridviewApp extends StatelessWidget {
@@ -20,96 +20,96 @@ class GridviewApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Latihan Gridview Fixed Count'),
+          title: const Text('Latihan Gridview Fixed Count'),
         ),
         body: GridView(
           // dengan memasukan jumlah grid nya
-          gridDelegate:
-              SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
           scrollDirection: Axis.vertical,
           // scrollDirection: Axis.horizontal,
           children: [
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('1'),
+              textItem: const Text('1'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('2'),
+              textItem: const Text('2'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('3'),
+              textItem: const Text('3'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('4'),
+              textItem: const Text('4'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('5'),
+              textItem: const Text('5'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('1'),
+              textItem: const Text('1'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('2'),
+              textItem: const Text('2'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('3'),
+              textItem: const Text('3'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('4'),
+              textItem: const Text('4'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('5'),
+              textItem: const Text('5'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('1'),
+              textItem: const Text('1'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('2'),
+              textItem: const Text('2'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('3'),
+              textItem: const Text('3'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('4'),
+              textItem: const Text('4'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('5'),
+              textItem: const Text('5'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('1'),
+              textItem: const Text('1'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('2'),
+              textItem: const Text('2'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('3'),
+              textItem: const Text('3'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('4'),
+              textItem: const Text('4'),
             ),
             ContainerItem(
               warna: Colors.amber,
-              textItem: Text('5'),
+              textItem: const Text('5'),
             ),
           ],
         ),
@@ -118,6 +118,7 @@ class GridviewApp extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class ContainerItem extends StatelessWidget {
   Color warna;
   Text textItem;
@@ -131,7 +132,7 @@ class ContainerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       color: warna,
       child: Center(
         child: textItem,

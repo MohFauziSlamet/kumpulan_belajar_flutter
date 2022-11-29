@@ -14,7 +14,7 @@ class TabItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
         child: Container(
-      padding: EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.only(bottom: 10),
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(

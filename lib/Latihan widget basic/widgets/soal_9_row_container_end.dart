@@ -34,7 +34,7 @@ class RowContainerEnd extends StatelessWidget {
             child: const Center(
               child: Text(
                 'Hello',
-                style: const TextStyle(fontSize: 40, color: Colors.white),
+                style: TextStyle(fontSize: 40, color: Colors.white),
               ),
             ),
           ),
@@ -48,7 +48,7 @@ class RowContainerEnd extends StatelessWidget {
             child: const Center(
               child: Text(
                 'Hello',
-                style: const TextStyle(fontSize: 40, color: Colors.black),
+                style: TextStyle(fontSize: 40, color: Colors.black),
               ),
             ),
           ),

@@ -77,7 +77,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -100,7 +100,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -121,7 +121,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -144,7 +144,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -165,7 +165,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -188,7 +188,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -209,7 +209,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -232,7 +232,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -253,7 +253,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -276,7 +276,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -297,7 +297,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -320,7 +320,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );
@@ -341,7 +341,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProfilePageDrawer();
+                            return const ProfilePageDrawer();
                           },
                         ),
                       );
@@ -364,7 +364,7 @@ class SettingsPageDrawer extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return SettingsPageDrawer();
+                            return const SettingsPageDrawer();
                           },
                         ),
                       );

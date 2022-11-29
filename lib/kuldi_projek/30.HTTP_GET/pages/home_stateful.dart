@@ -15,7 +15,7 @@ class _HomeStatefulState extends State<HomeStateful> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("GET - STATEFUL"),
+        title: const Text("GET - STATEFUL"),
       ),
       body: Container(
         width: double.infinity,
@@ -25,7 +25,7 @@ class _HomeStatefulState extends State<HomeStateful> {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(50),
-              child: Container(
+              child: SizedBox(
                 height: 100,
                 width: 100,
                 child: Image.network(
@@ -36,45 +36,45 @@ class _HomeStatefulState extends State<HomeStateful> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             FittedBox(
               child: Text(
                 (dataResponse.id == null)
                     ? "ID : Belum ada data"
                     : dataResponse.id,
-                style: TextStyle(fontSize: 20),
+                style: const TextStyle(fontSize: 20),
               ),
             ),
-            SizedBox(height: 20),
-            FittedBox(child: Text("Name : ", style: TextStyle(fontSize: 20))),
+            const SizedBox(height: 20),
+            const FittedBox(child: Text("Name : ", style: TextStyle(fontSize: 20))),
             FittedBox(
               child: Text(
                 (dataResponse.fullName == null)
                     ? "Belum ada data"
                     : dataResponse.fullName,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 20,
                 ),
               ),
             ),
-            SizedBox(height: 20),
-            FittedBox(child: Text("Email : ", style: TextStyle(fontSize: 20))),
+            const SizedBox(height: 20),
+            const FittedBox(child: Text("Email : ", style: TextStyle(fontSize: 20))),
             FittedBox(
               child: Text(
                 (dataResponse.email == null)
                     ? "Belum ada data"
                     : dataResponse.email,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 20,
                 ),
               ),
             ),
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
             OutlinedButton(
               onPressed: () {
                 // menampilkan popup
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
+                  const SnackBar(
                     content: Text("Berhasil mengambil data"),
                   ),
                 );
@@ -92,7 +92,7 @@ class _HomeStatefulState extends State<HomeStateful> {
                   });
                 });
               },
-              child: Text(
+              child: const Text(
                 "GET DATA",
                 style: TextStyle(
                   fontSize: 25,

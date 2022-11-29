@@ -9,20 +9,20 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home Page"),
+        title: const Text("Home Page"),
         centerTitle: true,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Home Page',
               style: TextStyle(fontSize: 30),
             ),
             TextButton(
               onPressed: () => Get.to(() => ShopPage()),
-              child: Text(
+              child: const Text(
                 'Shop >>',
                 style: TextStyle(fontSize: 25),
               ),

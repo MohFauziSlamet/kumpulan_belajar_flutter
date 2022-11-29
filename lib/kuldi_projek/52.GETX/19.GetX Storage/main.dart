@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
             ),
           );
         }
-        return MaterialApp(
+        return const MaterialApp(
           home: Scaffold(
             body: Center(
               child: CircularProgressIndicator(),

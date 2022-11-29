@@ -14,7 +14,7 @@ class User {
   }
 
   static Map<String, dynamic>? listFromJson(Map<String, dynamic> data) {
-    if (data.isEmpty || data.length == 0) {
+    if (data.isEmpty || data.isEmpty) {
       return {};
     }
     return data;

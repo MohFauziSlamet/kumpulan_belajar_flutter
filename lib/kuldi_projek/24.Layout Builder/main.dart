@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomePage(),
     );
   }
@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
         height: bodyHeightApp * 0.4,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
+          children: const [
             MyContainer(),
           ],
         ),
@@ -63,7 +63,7 @@ class MyContainer extends StatelessWidget {
 
   // untuk mengambil tinggi dan lebar parent , kita menggunakan constraints
 
-  MyContainer(
+  const MyContainer(
       // this.widthApp,
       );
   @override
@@ -72,7 +72,7 @@ class MyContainer extends StatelessWidget {
       builder: (context, constraints) {
         double tinggiParent = constraints.maxHeight;
         double lebarParent = constraints.maxWidth;
-        print('Lebar parent : ' + "$lebarParent");
+        print('Lebar parent : ' "$lebarParent");
         return Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.end,
@@ -88,7 +88,7 @@ class MyContainer extends StatelessWidget {
 
               color: Colors.blue[100],
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             Container(
@@ -96,7 +96,7 @@ class MyContainer extends StatelessWidget {
               width: 120,
               color: Colors.blue[100],
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             Container(

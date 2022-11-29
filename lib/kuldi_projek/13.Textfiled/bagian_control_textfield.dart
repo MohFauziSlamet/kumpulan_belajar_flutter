@@ -45,9 +45,7 @@ class _MyAppState extends State<MyApp> {
                         onChanged: (value) {
                           print("ini adalah methode onChange");
                           setState(() {
-                            if (value != null) {
-                              hasil = value;
-                            }
+                            hasil = value;
                           });
                         },
 
@@ -56,9 +54,7 @@ class _MyAppState extends State<MyApp> {
                         onFieldSubmitted: (value) {
                           print(value);
                           setState(() {
-                            if (value != null) {
-                              hasil = value;
-                            }
+                            hasil = value;
                           });
                         },
 

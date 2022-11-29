@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('State Management GETX OBX'),
+          title: const Text('State Management GETX OBX'),
           centerTitle: true,
         ),
         body: Column(
@@ -23,10 +23,10 @@ class MyApp extends StatelessWidget {
               init: counter,
               builder: (controller) => Text(
                 'Angka ${counter.counter}',
-                style: TextStyle(fontSize: 30),
+                style: const TextStyle(fontSize: 30),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
@@ -36,13 +36,13 @@ class MyApp extends StatelessWidget {
                   onPressed: () {
                     counter.mines();
                   },
-                  child: Text('Dikurangi'),
+                  child: const Text('Dikurangi'),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     counter.add();
                   },
-                  child: Text('Ditambah'),
+                  child: const Text('Ditambah'),
                 ),
               ],
             )

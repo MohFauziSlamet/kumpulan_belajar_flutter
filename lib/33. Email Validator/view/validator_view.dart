@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:provider/provider.dart';
 
 class ValidationView extends StatelessWidget {
   const ValidationView({Key? key}) : super(key: key);
@@ -45,7 +44,7 @@ class ValidationView extends StatelessWidget {
                   const SizedBox(height: 5),
                   const Text(
                     "bad  : (",
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 18,
                       color: Colors.white,
                       fontWeight: FontWeight.w300,
@@ -63,33 +62,33 @@ class ValidationView extends StatelessWidget {
                       showCursor: true,
                       decoration: InputDecoration(
                         labelText: "Email",
-                        labelStyle: TextStyle(
+                        labelStyle: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w300,
                           color: Colors.white,
                         ),
                         hintText: 'someThing@gmail.com',
-                        hintStyle: TextStyle(
+                        hintStyle: const TextStyle(
                           fontSize: 16,
                           color: Colors.grey,
                         ),
-                        prefixIcon: Icon(
+                        prefixIcon: const Icon(
                           Icons.email_outlined,
                           color: Colors.white,
                         ),
-                        suffixIcon: Icon(
+                        suffixIcon: const Icon(
                           Icons.close,
                           color: Colors.red,
                         ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.white,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.redAccent,
                             width: 2,
                           ),

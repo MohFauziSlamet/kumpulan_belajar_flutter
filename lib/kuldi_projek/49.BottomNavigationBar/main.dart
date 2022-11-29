@@ -9,7 +9,7 @@ class BottomNavigationApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomePage(),
     );
   }
@@ -82,11 +82,11 @@ class _HomePageState extends State<HomePage> {
 
         //
         selectedFontSize: 18,
-        selectedLabelStyle: TextStyle(fontSize: 18),
+        selectedLabelStyle: const TextStyle(fontSize: 18),
 
         unselectedFontSize: 10,
         unselectedLabelStyle:
-            TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            const TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
 
         iconSize: 30,
 

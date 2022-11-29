@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
             textInputAction: TextInputAction.next,
             decoration: InputDecoration(
               labelText: 'Email',
-              prefixIcon: Icon(Icons.email),
+              prefixIcon: const Icon(Icons.email),
               contentPadding:
                   const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
               border: OutlineInputBorder(
@@ -66,9 +66,9 @@ class _HomePageState extends State<HomePage> {
             textInputAction: TextInputAction.done,
             decoration: InputDecoration(
               labelText: 'Password',
-              prefixIcon: Icon(Icons.vpn_key),
+              prefixIcon: const Icon(Icons.vpn_key),
               suffixIcon: IconButton(
-                icon: Icon(Icons.remove_red_eye_outlined),
+                icon: const Icon(Icons.remove_red_eye_outlined),
                 onPressed: () {
                   if (isHidden == true) {
                     isHidden = false;
@@ -91,15 +91,15 @@ class _HomePageState extends State<HomePage> {
               print(
                   'LOGIN DENGAN EMAIL : (${emailC.text}) DAN PASSWORD : (${passC.text})');
             },
-            child: Text(
-              'LOGIN',
-              style: TextStyle(letterSpacing: 10),
-            ),
             style: ElevatedButton.styleFrom(
                 primary: Colors.blue,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),
-                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20)),
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20)),
+            child: const Text(
+              'LOGIN',
+              style: TextStyle(letterSpacing: 10),
+            ),
           )
         ],
       ),

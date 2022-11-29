@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Type Data Rx"),
+          title: const Text("Type Data Rx"),
           centerTitle: true,
         ),
         body: ListView(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                 Obx(
                   () => Text(
                     "${controller.count}",
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                 ),
                 Row(
@@ -38,27 +38,27 @@ class MyApp extends StatelessWidget {
                       onPressed: () {
                         controller.tambah();
                       },
-                      child: Text("+"),
+                      child: const Text("+"),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     ElevatedButton(
                       onPressed: () {
                         controller.kurang();
                       },
-                      child: Text("-"),
+                      child: const Text("-"),
                     ),
                   ],
                 )
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Obx(
                   () => Text(
                     "${controller.dataString}",
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                 ),
                 Row(
@@ -67,27 +67,27 @@ class MyApp extends StatelessWidget {
                       onPressed: () {
                         controller.updateDataString();
                       },
-                      child: Text("Update"),
+                      child: const Text("Update"),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     ElevatedButton(
                       onPressed: () {
                         controller.resetDataString();
                       },
-                      child: Text("Reset"),
+                      child: const Text("Reset"),
                     ),
                   ],
                 )
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Obx(
                   () => Text(
                     "${controller.dataDouble}",
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                 ),
                 Row(
@@ -96,35 +96,35 @@ class MyApp extends StatelessWidget {
                       onPressed: () {
                         controller.tambahDataDouble();
                       },
-                      child: Text("+"),
+                      child: const Text("+"),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     ElevatedButton(
                       onPressed: () {
                         controller.kurangDataDouble();
                       },
-                      child: Text("-"),
+                      child: const Text("-"),
                     ),
                   ],
                 )
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Obx(
                   () => Text(
                     "${controller.dataBoolean}",
-                    style: TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25),
                   ),
                 ),
-                SizedBox(width: 20),
+                const SizedBox(width: 20),
                 ElevatedButton(
                   onPressed: () {
                     controller.gantiBoolean();
                   },
-                  child: Text("ganti boolean"),
+                  child: const Text("ganti boolean"),
                 )
               ],
             )

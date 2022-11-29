@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Fonts Features"),
+          title: const Text("Fonts Features"),
         ),
         body: Center(
           child: Column(
-            children: [
+            children: const [
               Text("Contoh 1 (Tanpa Apapun)", style: TextStyle(fontSize: 20)),
             ],
           ),

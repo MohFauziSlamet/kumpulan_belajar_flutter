@@ -10,7 +10,7 @@ class HomeMultiBlocProvider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Counter BlocProvider'),
+        title: const Text('Counter BlocProvider'),
       ),
       body: Center(
         child: Column(
@@ -19,10 +19,10 @@ class HomeMultiBlocProvider extends StatelessWidget {
             BlocBuilder<CounterMultiBloc, int>(
               builder: (context, state) => Text(
                 'Angka saat ini : $state',
-                style: TextStyle(fontSize: 25),
+                style: const TextStyle(fontSize: 25),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Row(
@@ -32,13 +32,13 @@ class HomeMultiBlocProvider extends StatelessWidget {
                   onPressed: () {
                     return context.read<CounterMultiBloc>().decrement();
                   },
-                  icon: Icon(Icons.remove),
+                  icon: const Icon(Icons.remove),
                 ),
                 IconButton(
                   onPressed: () {
                     return context.read<CounterMultiBloc>().increment();
                   },
-                  icon: Icon(Icons.add),
+                  icon: const Icon(Icons.add),
                 ),
               ],
             )
@@ -47,7 +47,7 @@ class HomeMultiBlocProvider extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => context.read<ThemeMultiBloc>().changeTheme(),
-        child: Icon(Icons.color_lens),
+        child: const Icon(Icons.color_lens),
       ),
     );
   }
