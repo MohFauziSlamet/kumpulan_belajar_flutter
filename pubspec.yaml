@@ -70,6 +70,15 @@ dependencies:
   url_launcher: ^6.1.6 # konek dengan url dan call sms telf
   webview_flutter: ^3.0.4
   flutter_intro: ^3.0.2
+  showcaseview: ^2.0.0+1
+  coachmaker: ^0.2.1
+  overlay_tooltip: ^0.2.1
+  pixel_perfect: ^1.1.1
+  rive: ^0.9.1
+  flutter_svg: ^1.1.6
+  rubber: ^1.0.1
+  sliding_sheet: ^0.5.2
+  snapping_sheet: ^3.1.0
 
 dev_dependencies:
   flutter_test:
@@ -101,6 +110,10 @@ flutter:
     - assets/lotties/
     - assets/icon/
     - assets/yt_mitch_koko/icons/
+    - assets/avaters/
+    - assets/Backgrounds/
+    - assets/icons/
+    - assets/RiveAssets/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -154,6 +167,15 @@ flutter:
     - family: Anton
       fonts:
         - asset: fonts/Anton-Regular.ttf
+    - family: Intel
+      fonts:
+        - asset: assets/Fonts/Inter-Regular.ttf
+        - asset: assets/Fonts/Inter-SemiBold.ttf
+          weight: 600
+    - family: Poppins
+      fonts:
+        - asset: assets/Fonts/Poppins-Bold.ttf
+          weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

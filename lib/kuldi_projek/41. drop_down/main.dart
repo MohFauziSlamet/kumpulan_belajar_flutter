@@ -75,6 +75,7 @@ class _MyAppState extends State<MyApp> {
 
             /// untuk mendisable data yang diinginkan , berlaku pada string
             // popupItemDisabled: ( s) => s.startsWith('I'),
+            
             onChanged: (value) =>
                 print(value?["value"] ?? 'Belum ada yang dipilih'),
             selectedItem: const {
