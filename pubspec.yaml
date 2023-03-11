@@ -79,6 +79,7 @@ dependencies:
   rubber: ^1.0.1
   sliding_sheet: ^0.5.2
   snapping_sheet: ^3.1.0
+  fluttercontactpicker: ^4.7.0
 
 dev_dependencies:
   flutter_test:
