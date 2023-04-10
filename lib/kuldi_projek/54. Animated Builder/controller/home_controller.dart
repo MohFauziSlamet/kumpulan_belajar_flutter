@@ -27,7 +27,7 @@ class HomeController extends GetxController with GetTickerProviderStateMixin {
   void onInit() {
     animationController = AnimationController(
       animationBehavior: AnimationBehavior.normal,
-      duration: const Duration(seconds: 5),
+      duration: const Duration(seconds: 1),
       vsync: this,
     )..repeat(
         reverse: false,

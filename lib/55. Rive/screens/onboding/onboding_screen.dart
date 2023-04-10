@@ -38,9 +38,7 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
             width: MediaQuery.of(context).size.width * 1.7,
             left: 100,
             bottom: 100,
-            child: Image.asset(
-              "assets/Backgrounds/Spline.png",
-            ),
+            child: Image.asset("assets/Backgrounds/Spline.png"),
           ),
           Positioned.fill(
             child: BackdropFilter(
@@ -50,9 +48,7 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
           ),
 
           /// BACKGROUND BLUR DAN DYNAMIS
-          const RiveAnimation.asset(
-            "assets/RiveAssets/shapes.riv",
-          ),
+          const RiveAnimation.asset("assets/RiveAssets/shapes.riv"),
           Positioned.fill(
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 30, sigmaY: 30),

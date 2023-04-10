@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Animated CrossFade"),
+        title: const Text("Animated Positioned"),
         centerTitle: true,
       ),
       body: Center(

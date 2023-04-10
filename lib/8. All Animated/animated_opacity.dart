@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   RxBool clikContainer = false.obs;
   RxBool clikLogo = false.obs;
+
+  HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -30,9 +30,9 @@ class HomeScreen extends GetView<HomeController> {
           ),
           builder: (context, child) {
             return Transform.rotate(
-              // offset: Offset(0.0, -100),
-              // scale: controller.animationController.value * 2,
-              angle: controller.animationController.value * 2 * pi,
+              // offset: Offset(controller.animationController.value * 2, -100),
+              // scale: controller.animationController.value * 2, // Transform.scale
+              angle: controller.animationController.value * 2 * pi, // Transform.rotate
               child: child,
             );
           },

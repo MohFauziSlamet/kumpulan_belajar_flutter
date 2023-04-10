@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -19,6 +21,8 @@ class MyApp extends StatelessWidget {
 
 class HomePage extends StatelessWidget {
   RxBool clik = false.obs;
+
+  HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -57,10 +61,8 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                crossFadeState: clik.isTrue
-                    ? CrossFadeState.showFirst
-                    : CrossFadeState.showSecond,
-                duration: const Duration(seconds: 1),
+                crossFadeState: clik.isTrue ? CrossFadeState.showFirst : CrossFadeState.showSecond,
+                duration: const Duration(seconds: 3),
               ),
             )),
       ),

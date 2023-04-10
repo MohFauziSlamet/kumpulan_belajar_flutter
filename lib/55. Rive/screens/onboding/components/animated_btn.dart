@@ -40,7 +40,7 @@ class AnimatedBtn extends StatelessWidget {
                   )
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

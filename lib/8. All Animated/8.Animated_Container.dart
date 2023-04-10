@@ -3,17 +3,19 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   // const MyApp({Key  key}) : super(key: key);
 
   @override
-  _MyAppState createState() => _MyAppState();
+  MyAppState createState() => MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class MyAppState extends State<MyApp> {
   // AnimatedContainer , membutuhkan bil random dari dart.math
   // digunakan untuk mengenered ukuran random dan warna random
   Random random = Random();
