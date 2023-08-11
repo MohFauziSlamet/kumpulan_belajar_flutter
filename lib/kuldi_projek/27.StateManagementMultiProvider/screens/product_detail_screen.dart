@@ -11,8 +11,7 @@ class ProductDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //mengambil data id dari routing yang masuk
-    final productId =
-        ModalRoute.of(context)!.settings.arguments as String; // is the id!
+    final productId = ModalRoute.of(context)!.settings.arguments as String; // is the id!
 
     // mencari id, untuk menampilkan detail produk berdasarkan id yang didapat
     // keyword findById , methode yang digunakan untuk membantu mendapatkan id dari provider
@@ -28,7 +27,7 @@ class ProductDetailScreen extends StatelessWidget {
         actions: [
           Consumer<Cart>(
             builder: (context, value, child) {
-              return Badge(
+              return BadgeWidget(
                 value: value.jumlah.toString(),
                 color: Colors.amber,
                 child: IconButton(

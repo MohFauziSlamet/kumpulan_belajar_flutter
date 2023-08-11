@@ -1,6 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as bd;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -59,7 +59,7 @@ class _MainPageState extends State<MainPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Badge(
+                bd.Badge(
                   padding: const EdgeInsets.all(8),
                   toAnimate: false,
                   badgeContent: Text(
@@ -75,12 +75,12 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ),
                 const SizedBox(height: 32),
-                Badge(
+                bd.Badge(
                   padding: const EdgeInsets.all(8),
                   toAnimate: false,
                   badgeColor: Colors.orange,
-                  shape: BadgeShape.square,
-                  position: BadgePosition.topStart(),
+                  // shape: BadgeShape.square,
+                  // position: BadgePosition.topStart(),
                   // showBadge: false,
                   badgeContent: Text(
                     '$countMessages',

@@ -16,7 +16,7 @@ class ProductsOverviewScreen extends StatelessWidget {
         actions: [
           Consumer<Cart>(
             builder: (context, value, child) {
-              return Badge(
+              return BadgeWidget(
                 value: value.jumlah.toString(),
                 color: Colors.amber,
                 child: IconButton(
