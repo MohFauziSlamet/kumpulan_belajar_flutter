@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:connectycube_flutter_call_kit/connectycube_flutter_call_kit.dart';
 import 'package:flutter/foundation.dart';
 
@@ -9,7 +7,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:universal_io/io.dart';
 
 import 'package:connectycube_sdk/connectycube_sdk.dart';
-import 'package:platform_device_id/platform_device_id.dart';
+// import 'package:platform_device_id/platform_device_id.dart';
 
 import '../../main.dart';
 import '../utils/consts.dart';
@@ -75,13 +73,13 @@ class PushNotificationsManager {
       parameters.platform = CubePlatform.IOS;
     }
 
-    String? deviceId = await PlatformDeviceId.getDeviceId;
+    // String? deviceId = await PlatformDeviceId.getDeviceId;
 
-    if (kIsWeb) {
-      parameters.udid = base64Encode(utf8.encode(deviceId ?? ''));
-    } else {
-      parameters.udid = deviceId;
-    }
+    // if (kIsWeb) {
+    //   parameters.udid = base64Encode(utf8.encode(deviceId ?? ''));
+    // } else {
+    //   parameters.udid = deviceId;
+    // }
 
     var packageInfo = await PackageInfo.fromPlatform();
     parameters.bundleIdentifier = packageInfo.packageName;
