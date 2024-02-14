@@ -51,10 +51,10 @@ class MyApp extends StatelessWidget {
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
                         minimumSize: const Size(double.infinity, 55),
+                        backgroundColor: Colors.amber,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15),
-                        ),
-                        primary: Colors.amber),
+                        )),
                     child: const Text(
                       'Reset Password',
                       style: TextStyle(
